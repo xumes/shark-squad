@@ -1,0 +1,79 @@
+
+.hpd-tabset.notes-tabset {
+    height: calc(100% - 40px);
+    padding-bottom: 5px;
+}
+
+.hpd-tabset.notes-tabset .tab-content {
+    margin-top: 0;
+    height: 100%;
+}
+
+.hpd-tabset.notes-tabset .tab-content .tab-pane {
+    height: 100%;
+}
+
+.hpd-tabset a.nav-link, .notes-tabset a.nav-link { color: black; }
+
+.hpd-tabset .nav-tabs > li.active > a,
+.hpd-tabset .nav-tabs > li.active > a:hover,
+.hpd-tabset .nav-tabs > li.active > a:focus,
+.notes-tabset .nav-tabs > li.active > a,
+.notes-tabset .nav-tabs > li.active > a:hover,
+.notes-tabset .nav-tabs > li.active > a:focus {
+	border: none;
+	border-bottom: 2px solid #4178BE;
+	font-weight: bold;
+}
+
+.notes-tabbed .notes-tabbed-button-row{
+    height: 40px;
+    x-width: 100%;
+    background-color:  transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    float: right;
+}
+
+.notes-tabbed .notes-tabbed-button-row .notes-tabbed-button{
+    height: 40px;
+    width: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.notes-tabbed .notes-tabbed-button-row .notes-tabbed-button .hpd-tile-header-button span{
+    color: #555;
+}
+
+.notes-tabbed .flex{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100%
+}
+
+.notes-tabbed .full-height {
+    height: 100%;
+}
+
+.notes-tabbed .flex.justify-start{
+	justify-content: flex-start;
+}
+
+.notes-tabbed .flex.justify-end{
+	justify-content: flex-end;
+}
+
+.notes-tabbed .flex > .spacer-right{
+	margin-right: 10px;
+}
+
+.notes-tabbed .flex > .spacer-left{
+	margin-left: 10px;
+}
+
+.notes-tabbed .mce-panel {
+	border: 0 !important;
+}

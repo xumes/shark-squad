@@ -1,0 +1,136 @@
+.pipe-overview-type-label-nbr{
+	font-size: 15px;	
+	position: relative;
+	/*top: 12px;*/
+	vertical-align: baseline !important;	
+}
+
+.pipe-overview-type-label-bold-nbr{
+	font-size: 15px;
+	font-weight: bold;
+	/*position: relative;*/
+	top: 12px;
+	vertical-align: baseline !important;
+}
+
+.icon-arrow-up {
+  background-image: url(../images/icons/pipe-triangle-green.svg);
+  background-repeat: no-repeat;
+  width: 15px !important;
+  height: 15px !important;
+  margin: 0 !important;
+}
+
+.icon-arrow-down {
+  background-image: url(../images/icons/pipe-triangle-red.svg);
+  background-repeat: no-repeat;
+  width: 15px !important;
+  height: 15px !important;
+  margin: 0 !important;
+}
+
+.progress {
+  background-image: -webkit-linear-gradient(top, #aaaaaa 0%, #eeeeee 100%);
+  background-image:      -o-linear-gradient(top, #aaaaaa 0%, #eeeeee 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#aaaaaa), to(#eeeeee));
+  background-image:         linear-gradient(to bottom, ##aaaaaa 0%, #eeeeee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='##aaaaaa', endColorstr='#eeeeee', GradientType=0);
+  background-repeat: repeat-x;
+}
+
+.progress-bar-danger {
+  background-color: #E71D32 !important;
+}
+
+.progress-bar-warning {
+  background-color: #EFC100 !important;
+}
+
+.progress-bar-success {
+  background-color: #8CD211 !important;
+}
+
+.pipe-preview-bold {
+	font-weight: bold;
+}
+
+.pipe-preview-table {
+	width: 100% !important;
+	height: 100% !important;
+	margin-top: 10px;
+}
+
+.pipe-preview-right-spacer {
+	padding-right: 5px;
+}
+
+.pipe-preview-bottom-spacer {
+	padding-bottom: 5px;
+}
+
+.pipe-preview-bottom-spacer-big {
+	padding-bottom: 16px;
+}
+
+.pipe-preview-units-column {
+	width: 10%;
+}
+
+.pipe-preview-units {
+	padding-right: 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 5px;
+}
+
+.pipe-preview-progress-bar-column {
+	width: 70%;
+	padding-right: 5px;
+	vertical-align: bottom;
+}
+
+.pipe-preview-progress-bar {
+	margin-bottom: 8px;
+	padding: 0;
+	height: 15px;
+}
+
+.pipe-preview-triangle {
+	width: 5%;
+	vertical-align: bottom;
+	padding-bottom: 7px;
+
+}
+
+.pipe-preview-yty-column {
+	width: 10%;
+	vertical-align: bottom;
+	padding-bottom: 5px;
+	padding-left: 3px;
+}
+
+/* Delightmeter Needle */
+
+#delightmeter .needle,#delightmeter  .needle-center {
+    /* fill: #808080; */
+    fill: black;
+}
+
+/* Each arc in the meter */
+
+#delightmeter .arc {
+    fill: none;
+    stroke-width: 30px;
+}
+#delightmeter #arc1 {
+    stroke: #E71D32;
+}
+
+#delightmeter #arc2 {
+    stroke: #EFC100;
+}
+
+#delightmeter #arc3 {
+    stroke: #8CD211;
+}

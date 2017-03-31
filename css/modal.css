@@ -1,0 +1,243 @@
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.hpd-modal .ui-resizable-se.ui-icon-gripsmall-diagonal-se {
+	background-position: -78px -224px;
+}
+
+.hpd-modal .modal-content {
+	font-family: inherit;
+	font-weight: 300;
+}
+
+.hpd-modal .modal-content, 
+.hpd-modal .btn { 
+	border-radius: 0; 
+}
+
+.hpd-modal.ok-confirm-modal .modal-content,
+.hpd-modal.ok-confirm-modal .modal-footer {
+	text-align: center;
+}
+
+.hpd-modal .modal-content label {
+	font-weight: 300;
+	margin-right: 15px;
+	width: 375px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.hpd-modal.ok-confirm-modal .modal-header,
+.hpd-modal.ok-confirm-modal .modal-footer {
+	border: none;
+	padding: 25px 0;
+}
+
+.hpd-modal label.showHide {
+	padding-top: 25px;
+}
+
+
+
+
+.hpd-modal.hpd-multiple-upload .modal-content{
+    border: 0;
+}
+
+.hpd-modal.hpd-multiple-upload .modal-header{
+	background-color: #5AAAFA;
+}
+
+.hpd-modal.hpd-multiple-upload .modal-body .row{
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+.hpd-modal.hpd-multiple-upload .modal-body .grey{
+    background-color: #F0F1F3;
+}
+
+.hpd-modal.hpd-multiple-upload .modal-body input[type=text]{
+    border: 0;
+    border-radius: 0;
+}
+
+.hpd-modal.hpd-multiple-upload .modal-body .file-list{
+    max-height: 400px;
+    border: 0px solid red;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+
+.hpd-logout-modal-header
+{
+	font-family: inherit;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 1%;
+}
+
+.hpd-logout-modal-body
+{
+	font-family: inherit;
+	font-weight: 300;
+	text-align: center;
+	margin: 0 auto;
+	width: 55%;
+	margin-bottom: 3%;
+}
+
+.hpd-logout-modal-footer
+{
+	font-family: inherit;
+	font-weight: 300;
+	text-align: center
+}
+
+.hpd-logout-modal-footer button
+{
+	border-radius: 0;
+	width: 25%;
+	margin: 0 5%;
+
+}
+
+.hpd-logout-modal-pane div.modal-dialog div.modal-content
+{
+	border-radius: 0;
+	padding: 2%;
+	max-width: 400px;
+	min-width: 400px;
+	margin: 0 auto;
+}
+
+/** Add tile modal */
+
+.hpd-modal .add-tile-modal.modal-header {
+	background: #00A89C;
+	color: #FFF;
+	text-align: left;
+	padding: 12px;
+}
+
+.add-tile-modal.modal-header .modal-title { float: left; }
+.add-tile-modal.modal-header .cancel { margin-top: -10px; }
+.add-tile-modal.modal-header .cancel a { color: white; }
+
+.add-tile-modal.modal-body { text-align: left; }
+
+.add-tile-modal .tab-pane,
+.add-tile-modal li.uib-tab.active > a {
+	background: #F1F2F2;
+}
+
+.add-tile-modal .tab-pane {
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.add-tile-modal ul.add-card {
+	padding: 10px;
+	white-space: nowrap;
+	min-height: 315px;
+}
+
+.add-tile-modal ul.add-card input[type="checkbox"] {
+	margin-right: 5px;
+}
+
+.add-tile-modal li {
+	white-space: normal;
+	cursor: pointer;
+}
+
+.add-tile-modal .hpd-tile-box.selected {
+	border: 2px solid #00A89C;
+}
+
+.add-tile-modal .empty {
+	font-size: 2em;
+	color: #C1C1C1;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.bookmark-modal .modal-header {
+	text-align: center;
+}
+
+.modal-body textarea {
+	resize: none;
+	background-color: #F0F2F4;
+}
+
+.modal-error-msg {
+	text-align: center;
+	color: red;
+}
+
+.modal-body .flex{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100%
+}
+
+.modal-body .flex.justify-start{
+	justify-content: flex-start;
+}
+
+.modal-body .flex.justify-end{
+	justify-content: flex-end;
+}
+
+.modal-body .flex > .spacer-right{
+	margin-right: 10px;
+}
+
+.modal-body .flex > .spacer-left{
+	margin-left: 10px;
+}
+
+.notes-slide .mce-container-body  .mce-resizehandle{
+    width: 24px;
+    height: 24px;
+}
+
+.notes-slide .mce-container-body  .mce-resizehandle .mce-ico{
+    font-size: 24px;
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+}
+
+.modeless{
+	top:10%;
+	left:50%;
+	bottom:auto;
+	right:auto;
+	margin-left:-300px;
+}

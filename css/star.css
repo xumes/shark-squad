@@ -1,0 +1,56 @@
+
+/* Weekly STAR expanded pane - START */
+
+.star-chart-container .star-chart {
+	width: 100%;
+}
+
+.star-chart-container .star-chart-link {
+	margin-top: 10px;
+}
+
+.star-chart-container .star-chart-link > a {
+	font-size: .9em;
+}
+
+.star-chart-container .star-chart-link > a,
+.star-chart-container .star-chart-link > a > span {
+	color: #4178BE;
+}
+
+.star-chart-container a:hover,
+.star-chart-container a:focus {
+	text-decoration: none;
+}
+
+/** STAR YtY chart */
+
+.star-yty-chart-container {
+	margin-top: 40px;
+}
+
+.star-yty-chart-container .axis-label {
+	font-weight: bold;
+}
+
+/* dotted horizontal lines */
+#star-yty-chart line.c3-ygrid {
+    stroke: #C8D2D2;
+    stroke-dasharray: 1,2;
+}
+
+/** STAR chart table */
+
+.star-chart-table th, 
+.star-chart-table tbody > tr > td,
+.star-chart-table tbody { 
+     border: none !important;
+	 vertical-align: middle;
+}
+
+.star-chart-table tr.header-row span.title {
+	font-weight: bold;
+}
+
+
+/* Weekly STAR expanded pane - END */

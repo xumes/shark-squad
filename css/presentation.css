@@ -1,0 +1,75 @@
+.pres-container {
+	width: 100%;
+	display: inline-flex;
+}
+
+.pres-left {
+	padding-left: 10px;
+}
+
+.pres-right {
+	width: 100%;
+	padding-top: 15px;
+	padding-left: 10px;
+}
+
+.reset-padding-top {
+	padding-top: 0px;
+}
+
+.pres-container-vertical {
+	width: 100%;
+	display: block;
+}
+
+.pres-top {
+	width: 100%;
+	margin-top: 15px;
+}
+
+.pres-bottom {
+	width: 100%;
+	height: 290px;
+	margin-top: 20px;
+}
+
+.pres-tabset {
+	padding-bottom: 1rem;
+}
+
+.pres-tabset .tab-content {
+	padding-top: 1rem;
+}
+
+.pres-notes-control {
+	float: right;
+}
+
+.pres-card-subtitle {
+	color: #586262;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.pres-on-card-title {
+	margin-top: -10px;
+}
+
+.pres-off-card-title {
+	margin-top: 10px;
+}
+
+.pres-on-ov-card-title {
+	height: auto !important;
+	width: calc(100% - 50px) !important;
+}
+
+.pres-off-ov-card-title {
+	height: auto;
+	width: calc(100% - 350px);
+}
+
+.hpd-title-header-button-img {
+	width: 22px;
+	margin-top: 12px;	
+}

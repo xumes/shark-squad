@@ -1,0 +1,148 @@
+.login-page{
+  height: 100vh;
+	/*background: url('../images/login-bg.jpg') no-repeat center center;*/
+	background:  #d0dada;
+}
+
+.logo-img{
+  display: block;
+  width: 155px;
+  margin: auto;
+}
+
+.jumbotron{
+  background-color: #4178BE !important;
+  text-align: center;
+  color: #fff;
+}
+
+#login-logo-label{
+	font-face: IBM-Roman;
+  	font-size: 38px;
+  	font-weight: bold;
+  	color: #fff;
+}
+
+.hpd-sub-login-logo-label{
+	text-align: right;
+	font-size: 24px;
+	font-face: IBM-Roman;
+	width: 520px;
+	color: #fff;
+  margin: 0 auto;
+}
+
+.hpd-sub-login-logo-label .login-label-bold{
+	font-weight: bold;
+	}
+
+.logo-img{
+	background: url('../images/login-icon.png') no-repeat center center;
+	height: 25vh;
+	background-size: contain;
+}
+
+ img{
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+
+
+div.login-container
+{
+	align-items: center;
+  margin-top: -30px;
+}
+
+div.login-container > div.login
+{
+	width: 520px;
+	color: #fff;
+  margin: 0 auto;
+}
+
+.logo-title
+{
+	font-size: 3vw !important;
+}
+
+div.login-container > div.login h3
+{
+	font-size: 2vw;
+}
+
+div.login-container > div.login .logo-container{
+	position: relative;
+	width: 30%;		/* desired width */
+}
+div.login-container > div.login .logo-container:before{
+	content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+
+div.login-container > div.login .logo-container .logo
+{
+	display: block;
+	x-border: 1px solid palegoldenrod;
+	position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: url('../images/login-icon-2x.png') no-repeat 0 0;
+	background-size: contain;
+}
+
+div.login-container > div.login input[type='email'],
+div.login-container > div.login input[type='password']
+{
+	width: 100%;
+	font-size: 16px;
+	font-weight: normal;
+	font-family: IBM-Roman;
+	line-height: 2;
+	margin: 1% 0 2% 0%;
+	padding: 0 1%;
+	color: #6D7777;
+	border-radius: 0;
+    box-shadow: none;
+    border: none;
+}
+
+div.login-container > div.login .btn
+{
+	background: #4178BE;
+	width: 30%;
+	color: #fff;
+	text-shadow: none;
+	border-radius: 0;
+	box-shadow: none;
+	border: none;
+}
+
+div.login-container > div.login div.pull-right a
+{
+	color: #000;
+	font-size: 15px;
+	font-weight: normal;
+	font-family: IBM-Roman;
+}
+
+div.login-container > div.login .message
+{
+	color: #000;
+	padding-top: 20px;
+	font-size: 16px;
+	font-weight: normal;
+	font-family: IBM-Roman;
+}
+
+.login-container .environment {
+	position: absolute;
+    bottom: 45px;
+    left: 10px;
+    color: #000;
+}

@@ -1,0 +1,39 @@
+<div class="login-page">
+      <div class="jumbotron ">
+
+          <div class="logo-img">&nbsp</div>
+
+        <h1 id="login-logo-label">High Performance Dashboard</h1>
+        <h4 class="hpd-sub-login-logo-label">Now with <span class= "login-label-bold">SHARKS</span></h4>
+      </div>
+      <div class="login-container">
+        	<div class="login">
+            <div class="row">
+        			<div class="col-md-12">
+        				<h4 class="message">{{ message }}</h4>
+        			</div>
+        		</div>
+
+        		<form>
+        			<div class="row">
+        				<div class="col-md-12">
+        					<input data-ng-model="userid" type="email" placeholder="Email address" maxlength="50" class="form-control uidField" tabindex="1" required/>
+        				</div>
+        			</div>
+        			<div class="row">
+        				<div class="col-md-12">
+        					<input data-ng-model="password" type="password" hpd-enter="submit" placeholder="Password" maxlength="30" class="form-control pwdField" tabindex="2" required/>
+        					<div class="pull-right"><a href="https://w3.ibm.com/password">Forgot password?</a></div>
+        				</div>
+        			</div>
+        			<div class="row">
+        				<div class="col-md-12">
+        					<a class="btn btn-default btn-lg loginSubmit blue50" href="/manager">Sign in</a>
+        				</div>
+        			</div>
+        		</form>
+            <div class="environment">Happy environment</div>
+          </div>
+          <hpd-footer></hpd-footer>
+      </div>
+    </div>

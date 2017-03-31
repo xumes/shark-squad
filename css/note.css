@@ -1,0 +1,93 @@
+.hpd-note-modal-pane div.modal-dialog div.modal-content
+{
+	background-color: #e4e4e4;
+	border-radius: 0;
+	padding: 2%;
+	max-width: 400px;
+	min-width: 400px;
+	margin: 0 auto;
+}
+
+div.hpd-note form input[type="radio"], div.hpd-note form input[type="checkbox"]
+{
+	margin: 3%;
+	margin-left: 4%;
+	-ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2);
+	transform: scale(2);
+}
+
+div.hpd-notes-icon {
+    display: block;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    left: 50%;
+    height: 20px;
+    border-radius: 0 0 40px 40px;
+    background: #C0E6FF;
+    display: flex;
+    justify-content: center;
+}
+
+div.hpd-notes-icon.note-visible{
+    visibility: visible;
+}
+
+div.hpd-notes-icon.note-hidden{
+    visibility: hidden;
+}
+
+div.hpd-note .hpd-note-new, div.hpd-note .hpd-note-fav
+{
+	margin-left: 2%;
+}
+
+.note-scroll-location {
+
+}
+
+div.hpd-note .hpd-note-new
+{
+	font-weight: bolder;
+	border-bottom: 3px solid blue;
+}
+
+div.hpd-note form textarea
+{
+	width:  100%;
+}
+
+.notes-slide .flex{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100%
+}
+
+.notes-slide .full-height {
+    height: 100%;
+}
+
+.notes-slide .flex.justify-start{
+	justify-content: flex-start;
+}
+
+.notes-slide .flex.justify-end{
+	justify-content: flex-end;
+}
+
+.notes-slide .flex > .spacer-right{
+	margin-right: 10px;
+}
+
+.notes-slide .flex > .spacer-left{
+	margin-left: 10px;
+}
+
+.notes-slide .mce-panel {
+	border: 0 !important;
+}

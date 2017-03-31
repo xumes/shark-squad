@@ -1,0 +1,466 @@
+
+.xh-grid-preview {
+	height: 300px;
+	border: 0px;
+}
+
+.xh-grid-main {
+	height: 740px;
+	border: 0px;
+	/* font-size: 12px; */
+}
+
+.xh-grid-pres {
+	font-size: 12px;
+}
+
+.xh-grid-pres .ui-grid-header-cell {
+	font-size: 11px;
+}
+
+.xh-grid .ui-grid-header {
+	border: 0;
+}
+
+/* 
+.xh-grid .ui-grid-header-cell:nth-child(1) {
+	text-align: left;
+}
+
+.xh-grid .ui-grid-header-cell:last-child {
+	text-align: center;
+} */
+
+.xh-grid-preview .ui-grid-header-cell {
+	color: #6D7777;
+	background-color: #FFF;
+	border-bottom-width: 0px;
+	/* border-bottom-style: solid; */
+	/* border-bottom-color: #004071; */
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	text-align: right;
+	/* padding-right: 5px; */
+	vertical-align: bottom;	
+}
+
+.xh-grid-main .ui-grid-header-cell {
+	color: #004071;
+	background-color: #ffffff;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #004071;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	text-align: right;
+	padding-right: 5px;
+	vertical-align: bottom;
+}
+
+.xh-grid .ui-grid-top-panel {
+	background: #ffffff;
+}
+
+
+.xh-grid .ui-grid-cell-contents span.ui-grid-invisible {
+	display: none;
+}
+
+.xh-grid .ui-grid-header-cell span.ui-grid-header-cell-label {
+	white-space: normal;
+}
+
+.xh-grid-preview .ui-grid-header-cell span.ui-grid-header-cell-label {
+	/* white-space: nowrap; */
+	white-space: normal;
+}
+
+.xh-grid-preview .ui-grid-header-cell-row {
+	font-size: 10px;
+}
+
+.xh-grid-preview .ui-grid-cell-contents {
+	line-height: 1;
+}
+
+.xh-grid-preview-cell-font {
+	font-size: 12px;
+}
+
+.xh-grid .ui-grid-pinned-container.ui-grid-pinned-container-left .ui-grid-header-cell:last-child {
+	border-right: 0;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #004071;
+}
+
+.xh-two-row-bottom-border {
+	border-bottom-width: 1px !important;
+	border-bottom-style: solid !important;
+	border-bottom-color: gray !important;
+}
+
+.xh-two-row-top-border {
+	border-top-width: 1px !important;
+	border-top-style: solid !important;
+	border-top-color: gray !important;
+}
+
+/* .xh-grid .ui-grid-cell-contents {
+	white-space: normal;
+} */
+
+.xh-grid .ui-grid-row {
+/*  background-color: #ffffff; */
+	border-bottom-width: 0px;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+}
+
+.xh-grid-preview .ui-grid-row:nth-child(even) .ui-grid-cell,
+.xh-grid-preview .ui-grid-row:nth-child(odd) .ui-grid-cell {
+	background-color: #ffffff;
+}
+
+.xh-grid-preview .ui-grid-cell {
+	border-bottom: 1px solid #FFF;
+	border-right: 1px solid #FFF;
+	border-color: #FFF; /* this is just to override what is there by default */
+}
+
+/*#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(1) .ui-grid-cell,
+#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(2) .ui-grid-cell,
+#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(3) .ui-grid-cell,
+#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(7) .ui-grid-cell,
+#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(8) .ui-grid-cell,
+#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(9) .ui-grid-cell,
+#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(13) .ui-grid-cell,
+#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(14) .ui-grid-cell,
+#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(15) .ui-grid-cell,
+#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(19) .ui-grid-cell,
+#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(20) .ui-grid-cell,
+#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(21) .ui-grid-cell {
+	background-color: #F4F7F7;
+}
+
+#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(4) .ui-grid-cell,
+#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(5) .ui-grid-cell,
+#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(6) .ui-grid-cell,
+#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(10) .ui-grid-cell,
+#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(11) .ui-grid-cell,
+#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(12) .ui-grid-cell,
+#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(16) .ui-grid-cell,
+#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(17) .ui-grid-cell,
+#crosshatch-rows .xh-grid-main .ui-grid-row:nth-child(18) .ui-grid-cell {
+	background-color: #FBFCFC;
+}
+
+#crosshatch-rows .ui-grid-cell {
+	height: 45px;
+	line-height: 34px !important;
+}
+
+#crosshatch-rows .ui-grid-cell,
+#crosshatch-rows .ui-grid-header {
+	font-family: Roman;
+	font-size: 16px;
+}*/
+
+/* .xh-grid-preview .ui-grid-row:nth-child(4) .ui-grid-cell,
+.xh-grid-preview .ui-grid-row:nth-child(5) .ui-grid-cell,
+.xh-grid-preview .ui-grid-row:nth-child(6) .ui-grid-cell {
+	background-color: #F9F9FB;
+	vertical-align: middle !important;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+}
+
+.xh-grid-preview .ui-grid-row:nth-child(1) .ui-grid-cell,
+.xh-grid-preview .ui-grid-row:nth-child(2) .ui-grid-cell,
+.xh-grid-preview .ui-grid-row:nth-child(3) .ui-grid-cell {
+	background-color: #ffffff;
+	vertical-align: middle !important;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+} */
+
+.xh-grid-main .ui-grid-row:nth-child(even) .ui-grid-cell {
+    background-color: inherit;
+	border: 0px;
+	line-height: 0.6;
+}
+
+.xh-grid-main .ui-grid-row:nth-child(odd) .ui-grid-cell {
+    background-color: inherit;
+	border: 0px;
+	line-height: 0.6;
+}
+
+/*.xh-grid-preview .ui-grid-row:nth-child(even) .xh-grid-row-border,
+.xh-grid-preview .ui-grid-row:nth-child(odd) .xh-grid-row-border {
+	background-color: #ffffff;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	line-height: 0.6;
+}*/
+
+.xh-grid-main .ui-grid-row:nth-child(even) .xh-grid-row-border,
+.xh-grid-main .ui-grid-row:nth-child(odd) .xh-grid-row-border {
+	background-color: #ffffff;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	line-height: 0.6;
+}
+
+/* .xh-grid-preview .ui-grid-row:nth-child(even) .xh-grid-row-border,
+.xh-grid-preview .ui-grid-row:nth-child(odd) .xh-grid-row-border {
+	 background-color: #ffffff;
+	 border-bottom: gray solid 1px;
+	 line-height: 0.6;
+}*/
+
+.xh-grid-main .ui-grid-row:nth-child(even) .xh-grid-row-border,
+.xh-grid-main .ui-grid-row:nth-child(odd) .xh-grid-row-border {
+	background-color: #ffffff;
+	border-bottom: white solid 1px;
+	line-height: 0.6;
+}
+
+.xh-grid-main .ui-grid-row:nth-child(even) .xh-grid-row-top-border,
+.xh-grid-main .ui-grid-row:nth-child(odd) .xh-grid-row-top-border {
+	background-color: #ffffff;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: white;
+	line-height: 0.6;
+}
+
+.xh-grid-main .ui-grid-row:nth-child(even) .ui-grid-cell,
+.xh-grid-main .ui-grid-row:nth-child(odd) .ui-grid-cell {
+	border-right: white solid 1px;
+}
+
+
+/* .xh-grid .ui-grid-row:nth-child(even) .ui-grid-cell .xh-grid-row-even {
+	background-color: #ffffff;
+	border: 0px;
+}
+
+.xh-grid .ui-grid-row:nth-child(odd) .ui-grid-cell .xh-grid-row-even {
+	background-color: #ffffff;
+	border: 0px;
+}
+
+.xh-grid .ui-grid-row:nth-child(even) .xh-grid-row-odd {
+	background-color: #f3f3f3;
+	border: 0px;
+}
+
+.xh-grid .ui-grid-row:nth-child(odd) .xh-grid-row-odd {
+	background-color: #f3f3f3;
+	border: 0px;
+} */
+
+.xh-grid-cell-strong {
+	font-weight: bold;
+}
+
+.xh-grid-preview .xh-grid-cell-strong {
+	font-weight: bold;
+	color: #6D7777;
+}
+
+
+.xh-grid-cell-col1font {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.xh-grid-pres .xh-grid-cell-col1font {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+.xh-grid-cell-red {
+	color: red;
+}
+
+.xh-grid-cell-bgred {
+	background-color: #F7BFC6 !important;
+}
+
+.xh-grid-cell-fgred {
+	color: #F7BFC6 !important;
+}
+
+.xh-grid-cell-bgred-strong {
+	background-color: #e89491 !important;
+}
+
+.xh-grid-cell-fgred-strong {
+	color: #e89491 !important;
+}
+
+.xh-grid-cell-fggray {
+	color: #E0E0E0 !important;
+}
+
+.xh-grid-cell-bggray {
+	background-color: #E0E0E0 !important;
+}
+
+.xh-grid-cell-bgred1 {
+	background-color: #ffd2dd !important;
+}
+
+.xh-grid-cell-bgred2 {
+	background-color: #ffa5b4 !important;
+}
+
+.xh-grid-cell-bgred3 {
+	background-color: #ff7d87 !important;
+}
+
+.xh-grid-legend-box {
+	width: 20px;
+	height: 20px;
+	border: gray solid 1px;
+	display: inline-block;
+	margin-left: 5px;
+	text-align: center;
+}
+
+
+.xh-grid-cell-right {
+	text-align: right;
+}
+
+.xh-grid-cell-left {
+	text-align: left;
+}
+
+.xh-grid-cell-green {
+	color: green;
+}
+
+.xh-grid-cell-bggreen {
+	background-color: #CCE7D3 !important;
+}
+
+.xh-grid-cell-fggreen {
+	color: #CCE7D3 !important;
+}
+
+.xh-grid-cell-bggreen-strong {
+	background-color: #95d2b2 !important;
+}
+
+.xh-grid-cell-fggreen-strong {
+	color: #95d2b2 !important;
+}
+
+.xh-grid-cell-indent1 {
+	padding-left: 5px;
+}
+
+.xh-grid-cell-indent2 {
+	padding-left: 10px;
+}
+
+.xh-grid-cell-indent3 {
+	padding-left: 15px;
+}
+
+/*
+Customizing the grid hamburger menu
+*/
+.xh-grid-main .ui-grid-menu-button, .hpd-grid .ui-grid-menu-button, .pipe-grid .ui-grid-menu-button {
+	background-color: transparent;
+	border: 0;
+/* 	right: -20px; */
+	height: 40px;
+	width: 40px;
+}
+
+.pipe-grid .ui-grid-menu-button {
+	left: -10px;
+	top: -50px;
+}
+
+.xh-grid-main .ui-grid-menu-button {
+	left: -10px;
+	top: -30px;
+}
+
+.hpd-grid .ui-grid-menu-button {	
+	top: -30px;
+}
+
+.sales-pipe-grid .ui-grid-menu-button,
+.offerings-performance-grid .ui-grid-menu-button {	
+	top: -50px;
+}
+
+.pipe-offerings {	
+	margin-top: 80px;
+}
+
+.hpd-key-deals-grid .ui-grid-menu-button {
+	left: -10px;
+	/* top: -50px; */
+}
+
+.hpd-key-deals-details-grid .ui-grid-menu-button,
+.key-deals-opportunities .ui-grid-menu-button,
+.key-deals-details-keys .ui-grid-menu-button,
+.hpd-snd-key-deals-grid .ui-grid-menu-button {
+	left: -10px;
+	top: -30px;
+}
+
+/* .xh-grid-main .ui-grid-icon-menu:before, .hpd-grid .ui-grid-icon-menu:before, .pipe-grid .ui-grid-icon-menu:before{
+    font-size: 28px;
+    color: #4178BE;
+    content: "\f182";
+    font-family: "icons-ibm-v3";
+} */
+
+.xh-grid-main .ui-grid-icon-menu:before, .hpd-grid .ui-grid-icon-menu:before, .pipe-grid .ui-grid-icon-menu:before{
+	content: "";
+	background: url(../images/icons/ibm-tools-link.png) 50% 50% / 100% 100% no-repeat;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	cursor: pointer;
+}
+
+.xh-grid-tools {
+	text-align: right;
+}
+
+/* .xh-grid-tools-menu {
+	background: none;
+	box-shadow: none !important;
+} */
+
+.xh-grid-main .ui-grid-menu-inner, .hpd-grid .ui-grid-menu-inner, .pipe-grid .ui-grid-menu-inner {
+	position: fixed;
+	max-height: 380px;
+	overflow: scroll; 
+}
+
+.xh-grid-preview-subtitle {
+	margin-top: -15px;
+	margin-bottom: 5px;
+	padding-left: 20px;
+}

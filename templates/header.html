@@ -1,0 +1,24 @@
+<section id="header">
+	<div class="logo-header">
+		<div class="logo">High Performance Dashboard</div>
+	</div>
+
+	<div class="settings-header">
+
+	    <div class="btn-group hpd-nav-dropdown-group pull-right" uib-dropdown>
+	        <button id="nav-settings-button" type="button" class="btn hpd-nav-dropdown-btn" uib-dropdown-toggle>
+	            <span class="ibm-glyphicon ibm-setting-link hpd-settings-override"></span>
+	        </button>
+
+	        <ul class="hpd-nav-dropdown-group-menu hpd-animated-fast hpdFadeInDown" uib-dropdown-menu role="menu" aria-labelledby="nav-settings-button">
+	            <li ng-repeat="item in ctrl.settingsItems" data-ng-show="ctrl.visibilityFunc(item)">
+	                <a class="hpd-nav-dropdown-group-menuitem btn"
+	                	data-ng-click="ctrl.click(item)">{{ ctrl.label(item) }}</a>
+	            <li>
+	        </ul>
+	    </div>
+
+		<biz-unit-dropdown class="pull-right" ng-model="x" ng-change="ctrl.select" name="biz-init"></biz-unit-dropdown>
+
+	</div>
+</section>

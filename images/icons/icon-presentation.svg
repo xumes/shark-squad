@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="21px" viewBox="0 0 26 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-presentation</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="1" y="1.5862069" width="22" height="15.0689655"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="22" height="15.0689655" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Offerings" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-714.000000, -1464.000000)" id="icon-plain-presentation" stroke="#000000">
+            <g transform="translate(685.000000, 1463.000000)">
+                <g id="icon-presentation" transform="translate(30.000000, 0.000000)">
+                    <g id="icon-plain-">
+                        <g id="Group-4" transform="translate(9.000000, 16.000000)" stroke-width="1.5" stroke-linecap="square">
+                            <path d="M3.04945055,0.527777778 L0.510989011,4.84578544" id="Line"></path>
+                            <path d="M3.23076923,0.373563218 L5.76923077,4.69157088" id="Line-Copy"></path>
+                        </g>
+                        <use id="Rectangle" mask="url(#mask-2)" stroke-width="3" fill="#FFFFFF" xlink:href="#path-1"></use>
+                        <path d="M0.5,2 L23.5,2" id="Line" stroke-width="2" stroke-linecap="square"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

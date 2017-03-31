@@ -1,0 +1,1607 @@
+/**
+ * ------------------- common chart CSS base - START --------------------
+ */
+
+/** Chart preview */
+
+.hpd-chart-preview-container {
+	/*display: flex; causing issues on prev cards subtle */
+	flex-wrap: nowrap;
+}
+
+.preview-current-week .header {
+	font-weight: bold;
+}
+
+/** Chart page */
+
+.hpd-chart-container .ov-card-title {
+	margin-top: 0;
+	padding-top: 10px;
+}
+
+.hpd-chart-container .watermark,
+.hpd-chart-preview-container .watermark {
+	font-size: 3em;
+    color: #D1D1D1;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/** Card tabset */
+
+.hpd-tabset {
+	padding-bottom: 40px;
+}
+
+.hpd-tabset .tab-content {
+	margin-top: 40px;
+}
+
+.hpd-tabset a.nav-link, .pres-tabset a.nav-link { color: black; }
+
+.hpd-tabset .nav-tabs > li.active > a,
+.hpd-tabset .nav-tabs > li.active > a:hover,
+.hpd-tabset .nav-tabs > li.active > a:focus,
+.pres-tabset .nav-tabs > li.active > a,
+.pres-tabset .nav-tabs > li.active > a:hover,
+.pres-tabset .nav-tabs > li.active > a:focus {
+	border: none;
+	border-bottom: 2px solid #4178BE;
+	font-weight: bold;
+}
+
+/** Chart filter set */
+
+.hpd-chart-filter-set {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px !important;
+}
+
+.hpd-chart-filter-set .filter-option {
+	margin: 5px;
+}
+
+.hpd-chart-filter-set .filter-option > span.filter-label {
+	font-size: 1.2rem;
+	white-space: nowrap;
+}
+
+.hpd-chart-filter-set .filter-actions > button {
+	margin: 5px;
+	margin-top: 24px;
+}
+
+/** links container */
+.hpd-chart-link-container {
+	margin-top: 10px;
+}
+
+.c3-axis-y .tick line {display: none;}
+
+/** C3.js chart */
+
+.hpd-c3-chart-container {
+	margin-top: 40px;
+}
+
+.hpd-c3-chart {
+	max-height: 550px !important;
+	position: relative;
+}
+
+.hpd-c3-axis-label {
+	font-weight: bold;
+}
+
+.hpd-c3-chart.c3 > svg, .hpd-c3-chart.c3 > svg text {
+	overflow: visible !important; /* get rid of cropping tick values */
+	font: inherit;
+}
+
+/* remove axis lines */
+.hpd-c3-chart.c3 .c3-ygrid-line line, /* x-axis border line */
+.hpd-c3-chart.c3 .c3-axis .line,
+.hpd-c3-chart.c3 .c3-axis path,
+.hpd-c3-chart.c3 path line {
+	display: none;
+}
+
+/* remove tick lines */
+.hpd-c3-chart.c3 .c3-axis .tick line { display: none; }
+
+/* data labels */
+.hpd-c3-chart.c3 .c3-texts text {
+    fill: #576161 !important;
+    padding: 5px;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/* y-axis, x-axis labels */
+.hpd-c3-chart.c3 .c3-axis-y text,
+.hpd-c3-chart.c3 .c3-axis-x text {
+	font-weight: bold;
+	fill: #576161; /* cool grey 60  based on https://www.ibm.com/standards/web/design/color-palette*/
+}
+
+.hpd-c3-chart.c3 .c3-axis-y2 text {
+	font-weight: bold;
+	fill: #AF6EE8;
+}
+
+/* x-axis labels */
+#sign-track-chart .c3-axis-x .tick text {
+	font-size: 1.1em;
+}
+
+.c3.hpd-c3-chart .c3-line {
+	stroke-width: 3px;
+}
+
+/* stripe regions */
+.hpd-c3-chart.c3 .c3-region.region-color0 { fill: #F0F2F3; } /* cool white 30 */
+.hpd-c3-chart.c3 .c3-region.region-color1 { fill: #FBFCFC; } /* cool white 10 */
+
+/* set chart.axis.y.show = false in c3config to extend the striped regions;
+   re-show y-axis here so it overlaps the region */
+.c3.hpd-c3-chart.extended .c3-axis-y {
+	visibility: visible !important;
+	clip-path: none;
+	transform: translate(40px, -8px);
+}
+
+#sign-track-chart .c3-ygrid-line line, /* x-axis border line */
+#sign-track-chart .c3-axis .line{
+	stroke: black;
+}
+
+#sign-track-chart .c3-ygrid-line.zero-line line {
+	stroke: #5596E6 !important;
+	visibility: visible !important;
+	display: inline;
+}
+
+.hpd-c3-chart .zero-line line {
+	stroke: red !important;
+	fill: red;
+	visibility: visible !important;
+	display: inline;
+}
+
+/** common chart table */
+
+div.chart-table {
+	margin-top: 50px;
+}
+
+table.hpd-chart > thead > tr > th,
+table.hpd-chart tbody > tr > td,
+table.hpd-chart tbody {
+	 vertical-align: middle;
+}
+
+table.hpd-chart.borderless > thead > tr > th,
+table.hpd-chart.borderless tbody > tr > td,
+table.hpd-chart.borderless tbody {
+	 border: none;
+}
+
+/* row vertical spacing */
+table.hpd-chart tbody > tr > td {
+	padding: 13px 8px;
+}
+
+table.hpd-chart td.title.header {
+	font-weight: bold;
+}
+
+table.hpd-chart span.ibm-glyphicon.ibm-maximize-link,
+table.hpd-chart span.ibm-glyphicon.ibm-minimize-link {
+	top: 4px;
+	margin-top: -10px;
+}
+
+/* indent subheader row title */
+table.hpd-chart td.subheader {
+    padding-left: 30px;
+}
+
+table.hpd-chart.weekly thead {
+	color: #5596E6;
+	font-weight: bold;
+}
+
+/**
+ * ------------------- common chart CSS base - END --------------------
+ */
+
+/* IE chart preview - START */
+
+.hpd-c3-chart.c3.ie-preview-chart .c3-axis path {
+	display: inherit;
+}
+
+.hpd-c3-chart.ie-preview-chart g.c3-axis-y > g.tick{
+    /*display: none;*/
+}
+
+.hpd-c3-chart.ie-preview-chart g.c3-axis-y > g.tick:nth-of-type(4n + 1){
+    /*display: inherit;*/
+}
+
+.hpd-c3-chart.ie-preview-chart g.c3-axis-y > g.tick:first-child{
+    /*display: inherit;*/
+}
+
+.hpd-c3-chart.ie-preview-chart g.c3-axis-x > g.tick text tspan{
+	font-size: 10px;
+}
+
+.hpd-c3-chart.ie-preview-chart.c3 .c3-ygrid-line line {
+    display: inherit;
+}
+
+.hpd-c3-chart.ie-preview-chart.c3 .c3-grid line{
+    stroke: #000;
+}
+
+.hpd-c3-chart.ie-preview-chart.c3 .c3-axis-x path.domain{
+    display: none;
+}
+/* IE Chart preview - END */
+
+
+/* SI Chart expanded pane - START */
+
+.si-chart-container .c3-chart-container {
+	margin-top: 20px;
+}
+
+.si-chart-container .si-links {
+	display: flex;
+	margin-bottom: 40px;
+}
+
+.si-chart-container .si-links > div {
+    margin-right: 10px;
+}
+
+.si-chart-container .si-chart-link {
+	/* margin-top: 7px; */
+	margin-top: 20px;
+}
+
+.si-chart-container .si-chart-link > a {
+	font-size: .9em;
+}
+
+.ibm-label-align-middle{
+	vertical-align: 6px;
+}
+
+.si-chart-container a:hover,
+.si-chart-container a:focus {
+	text-decoration: none;
+}
+
+/* SI Chart */
+
+.si-chart-container .si-chart {
+	width: 100%;
+}
+
+.si-chart-container .c3-axis-labels {
+	display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.si-chart-container .c3-axis-label {
+ 	font-weight: bold;
+}
+
+/* remove tick lines */
+.si-chart-container .c3-axis .tick line { display: none; }
+
+/* dotted horizontal lines */
+.si-chart-container line.c3-ygrid {
+    stroke: #C8D2D2;
+    stroke-dasharray: 1,2;
+}
+
+.si-chart-container .c3-circles-yty .c3-circle {
+	stroke-width: 2px;
+    stroke: #AF6EE8;
+    fill: white !important;
+}
+.si-chart-container .c3-line {
+	stroke-width: 2px;
+}
+
+.si-chart-container .c3-axis-y2 g.tick text,
+.si-chart-container .c3-axis-y g.tick text {
+	font-weight: bold;
+}
+
+/* y2-axis label and ticks */
+.si-chart-container .c3-axis-y2-label,
+.si-chart-container .c3-axis-y2 {
+	fill: #AF6EE8;
+}
+
+.si-chart-container .hpd-c3-chart.c3 .c3-axis-y text {
+	fill: #5596E6;
+}
+
+/* dashed budget line */
+.si-chart-container .c3-target-budget {
+	stroke-dasharray: 2,2;
+}
+
+.si-chart-container .c3-target-budget .c3-line-budget {
+	stroke-width: 1px;
+}
+
+/* Fix legend overlap when x-axis labels are two lines (portrait) */
+.si-chart-container .c3-legend-item {
+	transform: translate(0, 40px);
+}
+
+.si-legend {
+    margin-top: 40px;
+    text-align: center;
+	width: 100%;
+}
+
+.si-legend span {
+    display: inline-block;
+    text-align: center;
+    vertical-align:middle;
+    cursor: pointer;
+    font-size: 1.0em;
+    margin: 10px;
+}
+
+.icon-siRevenue, .icon-ibmRevenue, .icon-budget, .icon-yty, .icon-track {
+	margin-right: 6px;
+}
+
+.icon-siRevenue, .icon-ibmRevenue {
+	width: 25px !important;
+	height: 24px;
+}
+
+.icon-siRevenue {
+  background-color: #5596E6;
+}
+
+
+.icon-ibmRevenue {
+  background-color: #DFE9E9;
+}
+
+.icon-budget {
+  background-image: url(../images/icons/budget-legend.svg);
+  background-repeat: no-repeat;
+  width: 48px !important;
+  height: 36px;
+}
+
+.icon-yty {
+  background-image: url(../images/icons/ytysolidnofill.svg);
+  background-repeat: no-repeat;
+  width: 26px !important;
+  height: 20px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.icon-track {
+  background-color: #FF5003;
+  background-repeat: no-repeat;
+  width: 26px !important;
+  height: 4px;
+  display: inline-block;
+  margin-top: 13px;
+}
+
+.spacer {
+	margin-bottom: 10px;
+	display: block;
+	font-size: 0.9em;
+}
+#sig-prev-chart .c3-axis-x
+.font9 {
+	font-size: 0.9em;
+}
+.font8-5 {
+	font-size: 0.85em;
+}
+
+.pipe-gap-title,
+.sign-title,
+.perform-title {
+	font-size: 0.9em;
+	color: #576161;
+}
+
+.paddingRemover15 {
+	transform: translate(-15px, 0);
+}
+
+/* SI Chart table */
+
+.si-chart-container table {
+	margin-top: 60px;
+}
+
+/*noinspection ALL*/
+.si-chart-container table > thead > tr > th {
+	font-weight: bold;
+	border-bottom-color: #5596E6;
+	word-break: break-word;
+}
+
+.si-chart-container table > tbody .si-metric {
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+/* SI Chart filters */
+
+/* break filter list after 3rd dropdown */
+.si-filter-container .filter-option:nth-child(3) {
+	flex-basis: calc(100% - 300px); /* 300px = 3 dropdown lengths */
+}
+
+/* SI Chart expanded pane - END */
+
+
+/* SI Chart Preview - START */
+#si-prev-chart .c3 svg {
+	transform: translate(-24px, -32px);
+}
+
+#si-prev-chart .c3 svg {
+	overflow: visible !important;
+	font: inherit;
+}
+
+#si-prev-chart .c3-circle {
+    stroke-width: 2px;
+    stroke: #AF6EE8;
+}
+
+#si-prev-chart .c3-line {
+  stroke-width: 2px;
+  stroke: #AF6EE8 !important;
+}
+
+#si-prev-chart .c3-axis .tick line {display: none;}
+#si-prev-chart .c3-axis-y line {display: none;}
+#si-prev-chart .c3-grid .c3-xgrid-focus .c3-ygrid-focus {
+   visibility : hidden !important;
+   display: none;
+}
+
+.revtext {
+  font-size: 1.0em;
+  color: #5596E6;
+}
+
+#si-prev-chart .c3-axis-y {
+  font-size: 1.0em;
+  stroke: #5596E6;
+  transform:translate(2px, -5px);
+}
+
+#si-prev-chart .c3-axis-y2 {
+	font-size: 1.0em;
+	stroke: #AF6EE8;
+	transform: translate(391px, -5px);
+}
+
+.ytytext {
+  font-size: 1.0em;
+  color: #AF6EE8;
+}
+
+#si-prev-chart .c3-axis-x {
+  font-size: 15px;
+  transform: translate(0,191px);
+}
+
+#si-prev-chart .c3-ygrid {
+  stroke-dasharray: 5, 0;
+  stroke-width: 0.5px;
+}
+
+#si-prev-chart .nv-y1{
+  display:none;
+}
+
+#si-prev-chart .nv-y2{
+  display:none;
+}
+
+/*#si-prev-chart path {
+	stroke: transparent;
+	fill: none;
+}*/
+
+#si-prev-chart g.c3-axis-y > g > text {
+	text-anchor: start !important;
+}
+
+#si-prev-chart g.c3-axis-y2 > g > text {
+	text-anchor: end !important;
+}
+
+/* Signings Y values */
+#si-prev-chart .c3-ygrid-line.ly-line line {
+  stroke: transparent;
+}
+
+/* Y axis color for all charts */
+#si-prev-chart .c3-ygrid-line.ly-line text,
+#sign-track-chart .c3-ygrid-line.ly-line text {
+  font-size: 15px;
+  fill: #5596E6;
+  font-weight: bold;
+  transform: translate(-3px, 3px);
+}
+
+#si-prev-chart .c3-ygrid-line.ly2-line line {
+  stroke: transparent;
+}
+
+/* Y2 axis color for all charts */
+#si-prev-chart .c3-ygrid-line.ly2-line text,
+#sign-track-chart .c3-ygrid-line.ly2-line text {
+  font-size: 15px;
+  fill: #AF6EE8;
+  font-weight: bold;
+  transform: translate(3px,3px);
+}
+
+#sign-track-chart .c3-axis-x {
+  transform: translate(0,510px); /*440*/
+}
+/* SI Chart Preview - END */
+
+
+/* Pipeline Overview - START*/
+.pipe-chart-container .c3 svg {
+	overflow: visible !important;
+	font: inherit;
+}
+
+.pipe-chart-container .filter-option {
+	margin: 5px;
+}
+
+.pipe-chart-container .filter-option > span {
+	font-size: 1.2rem;
+	white-space: nowrap;
+}
+
+.pipe-chart-container .filter-actions button {
+	margin: 5px;
+	margin-top: 8px;
+}
+
+#pipe-Ov-chart .c3-line {
+  stroke-width: 3px;
+}
+
+#pipe-Ov-chart .region-color0 {
+	fill: #F0F2F3;
+}
+
+#pipe-Ov-chart .region-color1 {
+	fill: #FBFCFC;
+}
+
+#pipe-Ov-chart .c3-target-future {
+	stroke-dasharray: 5,5;
+}
+
+#pipe-Ov-chart .c3-axis-y {
+	font-size: 1.2em;
+	font-weight: bolder;
+	transform: translate(31px, 0);
+}
+
+#pipe-Ov-chart .c3-axis-x {
+	transform: translate( 0, 566px);
+}
+
+#pipe-Ov-chart .c3-target-signings {
+	transform: translate(16px, 0px);
+}
+
+#pipe-Ov-chart .c3-target-wtw {
+	transform: translate(16px, 0px);
+}
+
+#pipe-Ov-chart .legend-title {
+  font-size: 0.75em;
+  font-weight: bolder;
+}
+
+#pipe-Ov-chart .c3-legend-item {
+	transform: translate(0, 7px);
+}
+
+#pipe-Ov-chart .c3-ygrid-line line,
+#pipe-Ov-chart .c3-axis-x .tick line,
+#pipe-Ov-chart .c3-axis-y .tick line,
+#pipe-Ov-chart .c3-axis-y line
+{
+	display: none;
+}
+#pipe-Ov-chart .c3-axis-y .tick {
+	overflow: visible !important;
+}
+
+#pipe-Ov-chart .c3-ygrid-line text
+{
+	font-size: 1.2em;
+	font-weight: bolder;
+	fill: #586464;
+	transform: translate(-2px, 3px);
+}
+
+/* get rid of cropping of tick values when font-size gets bigger */
+#pipe-Ov-chart svg {
+	overflow: visible !important;
+	font: inherit;
+}
+
+#pipe-Ov-chart .c3 svg {
+	overflow: visible !important;
+	font: inherit;
+}
+
+#pipe-Ov-chart g.c3-axis-y > g > text {
+	text-anchor: start !important;
+	transform: translate(-20px, 9px);
+}
+/*
+#pipe-Ov-chart path {
+	stroke: transparent;x
+	fill: none;
+}*/
+
+.weeks {
+    padding-top: 54px;
+}
+
+.table-titles {
+	font-family: IBM-Roman;
+	font-size: 15px;
+}
+
+.hpd-table-striped > tbody > tr:nth-of-type(even),
+table.hpd-chart > tbody > tr:nth-of-type(even).period-row {
+  	background-color: #FBFCFC; /* Cool White 10 */
+}
+
+.hpd-table-striped > tbody > tr:nth-of-type(odd),
+table.hpd-chart > tbody > tr:nth-of-type(odd).period-row {
+  	background-color: #F0F2F3; /* Cool White 30 */
+}
+
+#si-chart-table > tbody > tr:nth-child(odd) {
+  background-color: #F0F2F3; /* Cool White 30 */
+}
+
+#si-chart-table > tbody > tr:nth-child(even) {
+  background-color: #FBFCFC; /* Cool White 10 */
+}
+
+table.hpd-chart > tbody > tr.header-row  {
+	background: #DFE9E9;  /* #ECF0F2; */
+	font-weight: bold;
+}
+
+#si-chart-table > tbody > tr > td {
+	padding-top: 0px;
+	padding-bottom: 0px
+}
+
+#si-chart-table > tbody > tr > td,
+.hpd-table-striped > tbody > tr > td {
+	height: 45px;
+	vertical-align: middle;
+}
+
+.height-limit {
+	height: 34px;
+}
+
+.pipefilter-options {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.pipefilter-button {
+	margin: 5px;
+	margin-top: 17px;
+}
+
+.weeks-area {
+	margin-top: 100px;
+}
+
+.text-bold {
+  font-weight: bolder;
+}
+.pipe-gap-ov-title {
+	color: #576161;
+}
+
+.pipe-spacer {
+	margin-bottom: 10px;
+}
+
+/* Pipeline Overview - END */
+
+/* Pipeline Gap Preview - START*/
+
+#pipe-prev-gap .region-color0 {
+	fill: #F0F2F3;
+}
+
+#pipe-prev-gap .region-color1 {
+	fill: #FBFCFC;
+}
+
+#pipe-prev-gap .c3-target-dashed {
+	stroke-dasharray: 3, 3;
+}
+
+#pipe-prev-gap .c3-line {
+  stroke-width: 3px;
+}
+
+#pipe-prev-gap .c3-chart {
+  transform: translate(2px, 0);
+}
+
+#pipe-prev-gap .c3-axis-y {
+  transform: translate(10px, 8px);
+}
+
+#pipe-prev-gap .c3-axis-x {
+	transform: translate(-27px, 181px);
+}
+
+#pipe-prev-gap g.c3-chart-lines {
+	transform: translate(-27px, -3px);
+}
+
+#pipe-prev-gap .c3-ygrid-line.no-line line {
+  stroke: transparent;
+}
+
+#pipe-prev-gap .c3-grid text {
+	fill: #5E696C;
+	font-weight: bold;
+	transform: translate(-3px, 3px);
+}
+
+#pipe-prev-gap g.c3-axis-y > g > text {
+	text-anchor: start !important;
+}
+
+.prev-pipe-spacer {
+	margin-bottom: 5px;
+	display: block;
+	font-size: 0.9em;
+}
+
+/* Pipeline Gap Preview - END */
+
+/* Star Track Preview - START */
+
+#star-prev-chart .c3-circle {
+        stroke-width: 2px;
+        stroke: #3E76C0;
+        fill: #ffffff !important;
+    }
+#star-prev-chart .c3-line {
+      stroke-width: 2px;
+    }
+
+#star-prev-chart .c3-target-forecast {
+	stroke-dasharray: 5,5;
+}
+
+#star-prev-chart svg {
+	overflow: visible !important;
+	font: inherit;
+}
+
+#star-prev-chart .c3 svg {
+	transform: translate(0, 2px);
+}
+
+#star-prev-chart .region-color0 {
+	fill: #F0F2F3;
+}
+
+#star-prev-chart .region-color1 {
+	fill: #FBFCFC;
+}
+
+#star-prev-chart .c3-axis .tick line {display: none;}
+
+#star-prev-chart .c3-axis-x {
+  transform: translate(30px,190px);
+}
+
+#star-prev-chart .c3-chart {
+  transform: translate(30px,0);
+}
+
+#star-prev-chart .nv-y1{
+  display:none;
+}
+
+#star-prev-chart .c3-ygrid-line.y-line line {
+  stroke-width: 5px;
+  stroke-dasharray: 5, 5;
+  stroke: #AF6EE8;
+  transform: translate(55px,0);
+}
+
+#star-prev-chart .c3-regions {
+  transform: translate(50px,0);
+}
+
+#star-prev-chart .c3-ygrid-line.no-line line {
+  stroke: transparent;
+}
+
+#star-prev-chart .c3-ygrid-line.no-line text {
+  font-size: 1.0em;
+  stroke: #888888;
+}
+
+.star-prev-title, .sign-prev-title {
+	font-size: 0.87em;
+	color: #576161;
+	font-weight: bold;
+}
+
+.star-small-prev-title,
+.sign-small-prev-title {
+	font-size: 0.8em;
+	color: #576161;
+	font-weight: bold;
+}
+
+.star-legend-font{
+	font-size: 0.9em;
+}
+
+.load-small-prev-title {
+	color: #576161;
+	font-weight: bold;
+}
+
+.load-preview-sidebar {
+	font-size: 0.8em;
+}
+
+.load-preview-sidebar span {
+	margin-bottom: -2px;
+	display: block;
+}
+.load-preview-sidebar span.header { font-weight: bold; }
+.load-preview-sidebar span.subgroup { margin-top: 10px; }
+
+.preview-legend-font{
+    font-size: 0.8em;
+}
+/* Star Track Preview - END */
+
+/* Star Track OV Week - START */
+
+#star-track-chart .c3-circle {
+        stroke-width: 4px;
+        stroke: #3E76C0;
+        fill: #ffffff !important;
+}
+
+#star-track-chart .c3-line {
+      stroke-width: 4px;
+}
+
+#star-track-chart .c3-target-forecast {
+	stroke-dasharray: 5,5;
+}
+
+#star-track-chart .c3-target-ytyforecast {
+	stroke-dasharray: 5,5;
+}
+
+#star-track-chart svg {
+	overflow: visible !important;
+	font: inherit;
+}
+
+#star-track-chart .c3 svg {
+	overflow: visible !important;
+	font: inherit;
+}
+
+#star-track-chart .region-color0 {
+	fill: #F0F2F3;
+}
+
+#star-track-chart .region-color1 {
+	fill: #FBFCFC;
+}
+
+#star-track-chart .c3-axis .tick line {display: none;}
+
+.revtetx {
+  font-size: 0.95em;
+  color: #B1C0D0;
+}
+
+#star-track-chart .c3-axis-x {
+	transform: translate(0, 507px);
+}
+
+#star-track-chart .c3-axis-y {
+	transform: translate(-7px, 2px);
+}
+
+#star-track-chart .nv-y1{
+  display:none;
+}
+
+.legend-container {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.legend-container > .legend {
+	padding: 10px;
+	cursor: pointer;
+}
+
+.legend-container .label-legend,
+.legend-container .icon-legend {
+	display: inline-block;
+    vertical-align: top;
+    height: 30px;
+    line-height: 30px;
+}
+
+.icon-legend {
+	width: 30px;
+	background: none no-repeat right center;
+}
+.icon-star-legend { background-image: url(../images/icons/star-legend.svg); }
+.icon-forecast-legend { background-image : url(../images/icons/forecast-legend.svg); }
+.icon-sm-legend { background-color: #5596E6; } /* signings */
+.icon-wtw-legend { background-image : url(../images/icons/forecast-legend.svg); } /* signings */
+
+#star-track-chart .c3-regions {
+  transform: translate(8px,0);
+}
+
+#star-track-chart .c3-ygrid-line.no-line line {
+  stroke: transparent;
+}
+
+#star-track-chart .c3-ygrid-line.no-line text {
+  font-size: 0.89em;
+  stroke: #777677;
+}
+
+/* controls the chart display */
+#star-track-chart .c3-target-star {
+	display: inline;
+}
+
+.star-track-header {
+	width: 100%;
+}
+
+.star-track-header tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) {
+	vertical-align: bottom;
+	padding-right: 10px;
+}
+
+.star-track-header tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) {
+	padding-right: 10px;
+}
+
+.star-track-header:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) >
+table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) {
+	width: 73%;
+}
+
+#star-track-chart g.no-line:nth-child(1) > text:nth-child(2) {
+	transform: translate(-4px, 0);
+}
+
+.star-chart-container {
+	min-height: 550px;
+}
+
+.star-week-title {
+	font-size: 1em;
+	color: #576161;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+.chart-show{
+	overflow: visible;
+	display: inline;
+
+}
+
+.chart-hide{
+	display: none;
+}
+
+/* Star Track Chart - END */
+
+/* Star YTY Chart - START */
+
+#star-yty-chart .zeroline line {
+	stroke: #576161 !important;
+	visibility: visible !important;
+	display: inline !important;
+}
+
+/* Star YTY Chart - END */
+
+/** -----------------------Signings - START -----------------------------*/
+
+/* Signings Preview - START*/
+
+#sig-prev-chart .c3-circle {
+        stroke-width: 2px;
+        stroke: #AF6EE8;
+        fill: #ffffff !important;
+    }
+#sig-prev-chart .c3-line {
+      stroke-width: 2px;
+    }
+
+#sig-prev-chart svg {
+	overflow: visible !important;
+	font: inherit;
+}
+
+#sig-prev-chart .c3 svg {
+	transform: translate(0, 3px);
+}
+
+#sig-prev-chart .c3-target-signings {
+	transform: translate(20px, 0px);
+}
+
+#sig-prev-chart .c3-target-yty {
+	transform: translate(20px, 0px);
+}
+
+#sig-prev-chart .c3-target-track {
+	transform: translate(20px, 0px);
+}
+
+#sig-prev-chart .region-color0 {
+	fill: #F0F2F3;
+}
+
+#sig-prev-chart .region-color1 {
+	fill: #FBFCFC;
+}
+
+#sig-prev-chart .c3-axis .tick line {display: none;}
+
+#sig-prev-chart .c3-axis-x {
+	transform: translate(48px, 170px);
+}
+
+#sig-prev-chart .c3-chart {
+	transform: translate(30px,0);
+}
+
+#sig-prev-chart .nv-y1{
+	display:none;
+}
+
+#sig-prev-chart .c3-ygrid-line.y-line line {
+  stroke-width: 5px;
+  stroke-dasharray: 5, 5;
+  stroke: #AF6EE8;
+  transform: translate(55px,0);
+}
+
+#sig-prev-chart .c3-regions {
+  transform: translate(48px,0);
+}
+
+#sig-prev-chart .c3-ygrid-line.no-line line {
+  stroke: transparent;
+}
+
+#sig-prev-chart .c3-ygrid-line.no-line text {
+  font-size: 1.0em;
+  stroke: #576161;
+}
+
+.sig-prev-title {
+	font-size: 0.87em;
+	color: #576161;
+	font-weight: bold;
+}
+
+/* Signings Preview - END*/
+
+/* Signings OV - START*/
+
+#sign-track-chart .c3-circle {
+        stroke-width: 3px;
+        stroke: #AF6EE8;
+        fill: #ffffff !important;
+    }
+
+#sign-track-chart .c3-ygrid-line.no-line line {
+  stroke: transparent;
+}
+
+#sign-track-chart .c3-ygrid-line.no-line text {
+  font-size: 1.2em;
+  fill: #576161; /* cool-gray 50 */
+  transform: translate(0, 3px);
+}
+
+#sign-track-chart .c3-y2grid-line.no-line line {
+  stroke: transparent;
+}
+
+#sign-track-chart .c3-y2grid-line.no-line text {
+  font-size: 1.2em;
+  fill: #AF6EE8;
+  transform:translate(-2px, 7px);
+}
+
+#sign-track-chart .nv-y1,
+#sign-track-chart .nv-x1,
+#sign-track-chart .c3-ygrid-line line,
+#sign-track-chart .c3-axis-x .tick line,
+#sign-track-chart .c3-axis-y .tick line,
+#sign-track-chart .c3-axis-y line
+{
+	display: none;
+}
+
+ #sign-track-chart .c3-axis-y .tick line {display: none;}
+
+ #sign-track-chart .c3-target-yty .c3-line-yty {
+	stroke-width: 2px;
+	stroke: #AF6EE8 !important;
+}
+
+#sign-track-chart .c3-circles-yty {
+	stroke-width: 3px;
+	stroke: #AF6EE8 !important;
+	fill: #FFFFFF !important;
+}
+
+/* controls the chart display */
+#sign-track-chart .c3-target-signings {
+	display: inline;
+}
+
+#sign-track-chart .c3-ygrid-line.no-line line {
+  stroke: transparent;
+}
+
+/*
+#sign-track-chart g.no-line:nth-child(1) > text:nth-child(2) {
+	transform: translate(-4px, 8px);
+}
+*/
+/*
+#sign-track-chart .c3-axis-y {
+	transform: translate(1xp, 1px);
+}
+#sign-track-chart .c3-axis-y2 {
+	transform: translate(1px, 1px);
+}*/
+
+#signings-track-table table.hpd-chart tbody > tr > td {
+	line-height: 19px;
+}
+/* Signings OV - END*/
+
+/* Signings revenue chart */
+
+
+/** -----------------------Signings - END -----------------------------*/
+
+/** -----------------------Headcount - START ---------------------------*/
+
+.hpd-chart-container.headcount .c3.hpd-c3-chart .c3-circle {
+	fill: #FFF !important;
+    stroke: black;
+    stroke-width: 3px;
+}
+
+.headcount-chart .c3-circle {
+	fill: #FFF !important;
+	stroke: #5392FF !important;
+    stroke-width: 3px;
+}
+
+.headcount-chart g.c3-axis-y > g > text {
+	text-anchor: start !important;
+}
+
+.headcount-track-tab-container .c3.hpd-c3-chart .c3-circles-ftr > .c3-circle {
+    stroke: #5392FF;
+}
+
+.c3.hpd-c3-chart.extended.headcount-chart .c3-axis-y {
+    transform: translate(10px, -6px);
+}
+
+.preview-current-week {
+	padding-left: 10px;
+}
+
+.preview-current-week .category {
+	margin-bottom: 25px;
+}
+
+.preview-current-week .header.title {
+	margin-bottom: 10px;
+}
+
+.headcount-table table.hpd-chart {
+	background-color: #FBFCFC; /* cool white 1 */
+}
+
+.headcount-table table.hpd-chart > tbody > tr.odd {
+	background-color: #F0F2F3; /* cool white 3 */
+}
+
+.headcount-table table.hpd-chart .header-col {
+	width: 250px;
+}
+
+/** -----------------------Headcount - END -----------------------------*/
+
+/** ----------------------- Load Track - START ---------------------------*/
+
+/* Load track page */
+
+/* Load track chart */
+
+.load-track-charts {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 0px;
+}
+
+.load-track-charts > .track-chart {
+	width: calc(50% - 20px);
+	margin: 10px;
+	padding: 20px;
+	padding-bottom: 0px;
+	border: 1px solid #AEB8B8;
+	/* padding set on c3js chart */
+}
+
+.load-track-tab-container ul.z-toggle {
+	margin-bottom: 0px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.track-chart .hpd-c3-chart .c3-chart-lines {
+	stroke-dasharray: 8,3;
+}
+
+.hpd-c3-chart-container.load-track-charts .hpd-c3-chart .c3-axis-x text tspan {
+	font-size: 0.6em  /* fit Wk label in x-axis */
+}
+
+.track-title {
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+/* Load track legend */
+
+.load-track-tab-container .legend-container {
+	justify-content: space-around;
+	padding: 0px 10px;
+}
+
+.load-track-tab-container .legend-container > .legend {
+	padding: 5px;
+    /*cursor: pointer;*/
+    display: flex;
+    align-items: center;
+}
+
+.load-track-tab-container .legend-container .icon-legend.icon-sm-legend {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.icon-legend.icon-sm-legend.striped {
+    border-top: 9px solid #fff;
+    border-bottom: 9px solid #fff;
+    width: 25px;
+}
+
+.icon-legend.icon-sm-legend.striped.bg-blue30 {
+	background: repeating-linear-gradient( 90deg, #4479BB, #4479BB 3px, #FFFFFF 3px,  #FFFFFF 5px );
+}
+
+.icon-legend.icon-sm-legend.striped.bg-green30 {
+	background: repeating-linear-gradient( 90deg, #5CA51D, #5CA51D 3px, #FFFFFF 3px,  #FFFFFF 5px );
+}
+
+.icon-legend.bg-green30 { background-color: #5CA51D; }
+.icon-legend.bg-blue30 { background-color: #4479BB; }
+.icon-legend.bg-blue50 { background-color: #5EACF7; }
+.icon-legend.bg-green50 { background-color: #B5DE5B; }
+
+/* Load track table */
+
+.load-track-table thead {
+	color: #4178BE;
+	font-weight: bold;
+}
+
+.load-track-table tr.header-row {
+	background-color: #ECF0F2;
+	font-weight: bold;
+}
+
+.load-track-table .header-col {
+	width: 300px;
+}
+
+.load-track-table table.hpd-chart tbody > tr > td.subgroup {
+	padding-left: 30px;
+}
+
+/* OT toggle */
+
+.load-track-table .ot-toggle-container {
+	text-align: right;
+	margin-bottom: 10px;
+}
+.load-track-table table.hpd-chart td.ot-col {
+	border-left: 1px solid #6D7777;
+}
+.load-track-table.ot-hide .ot-col {
+	display: none;
+}
+
+
+
+
+/** ----------------------- Load Track - END -----------------------------*/
+
+
+/** ----------------------- Market Diagnostic - START ---------------------------*/
+
+.market-chart-container {
+	display: flex;
+	justify-content: center;
+}
+
+/* quadrant labels */
+.quad-labels {
+	display: flex;
+	flex-direction: row;
+	margin-left: 25px; /* compensate for y-axis labels */
+}
+
+.quad-labels .left, .quad-labels .right {
+	padding: 5px;
+	flex: 1;
+}
+
+.quad-labels.bottom { margin-top: -15px; }
+.quad-labels .right { text-align: right; }
+.quad-labels .desc { font-size: 10px; }
+.quad-labels .title {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+/* chart */
+
+/* fixed width */
+.market-chart-container .hpd-c3-chart-container {
+	flex: 0 0 565px;
+	max-width: 565px;
+}
+.market-chart-container .hpd-c3-chart {
+	max-height: 570px !important; /* override */
+	margin-left: -35px;
+}
+
+/* chart background image */
+.market-chart-container .hpd-c3-chart .c3-event-rects rect {
+	fill-opacity: 1;
+	fill: url("#bubble-chart-bg");
+}
+
+
+
+/* sidebar */
+
+.market-chart-container .sidebar {
+	flex: 0 0 340px;
+	max-width: 340px;
+	display: flex;
+	margin-top: 40px;
+	padding: 10px;
+	height: 670px;
+}
+
+.market-chart-container .sidebar .left,
+.market-chart-container .sidebar .right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+}
+
+.market-chart-container .sidebar ul { margin-bottom: 0px; }
+
+.market-chart-container .sidebar .left {
+	border-right: 2px solid #DFE9E9;
+}
+
+.market-chart-container .sidebar .quadrant.bottom {
+	flex: 1; /* expand to fill height */
+}
+
+
+.market-chart-container .sidebar .title {
+	font-weight: bold;
+	font-size: 12px;
+	padding: 5px;
+}
+
+.market-chart-container .sidebar .quadrant li {
+	display: flex;
+	padding: 5px;
+}
+
+.market-chart-container .sidebar .quadrant li.selected {
+	background: grey;
+	color: white;
+}
+
+.market-chart-container .sidebar .quadrant .circle {
+	flex: 0 0 30px; /* fix width */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: black;
+    line-height: 30px;
+    text-align: center;
+    opacity: .8;
+    font-weight: bold;
+}
+
+.market-chart-container .sidebar .quadrant .info {
+	padding-left: 5px;
+	font-size: .8em;
+}
+
+.market-chart-container .hpd-c3-chart.c3 .c3-texts text {
+	fill: black !important;
+	font-weight: bold;
+}
+
+.hpd-c3-chart.c3 .c3-axis-y-label {
+	transform: rotate(-90deg) translate(0, 20px);
+}
+
+.hpd-c3-chart.c3 .c3-axis-x-label {
+	transform: translate(0, -20px);
+}
+
+
+.bg-coolwhite3 { background-color: #F0F2F3; }
+.bg-coolwhite2 { background-color: #F9F9FB; }
+
+.bg-grey30 { background-color: #AEAEAE; }
+.bg-red30 { background-color: #FFA5B4; }
+.bg-green30 { background-color: #008571; }
+.bg-yellow30 { background-color: #FDD600; }
+.bg-black { background-color: #000; }
+
+
+.market-chart-container .hpd-c3-chart.c3 .c3-ygrid-line line {
+	display: inline;
+}
+
+.market-chart-container .c3-circles-marketGap circle {
+	opacity: 0.7 !important;
+}
+
+/** legend */
+
+.market-diagnostic-tab-container .legend {
+	margin-top: 10px;
+	border: 1px solid #DFE9E9;
+}
+
+.market-diagnostic-tab-container .legend .header {
+	background: #DFE9E9;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+	font-size: 10px;
+}
+
+.market-diagnostic-tab-container .legend .header .title {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.market-diagnostic-tab-container .legend ul {
+	margin: 10px 5px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.market-diagnostic-tab-container .legend ul li {
+	font-size: .8em;
+	display: flex;
+    vertical-align: middle;
+    text-align: left;
+    line-height: 15px;
+}
+
+.market-diagnostic-tab-container .legend ul .circle {
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    border-radius: 50%;
+    color: #fff;
+    opacity: .8;
+    margin-right: 2px;
+}
+
+/** ----------------------- Market Diagnostic - END ---------------------------*/
+
+
+/* Fin Chart*/
+.teste {
+    width: 500px;
+    height: 500px;
+    background: red;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+.teste:hover {
+    width: 1000px;
+    height: 1000px;
+}

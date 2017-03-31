@@ -1,0 +1,96 @@
+.cardpre-valuebig{
+	font-weight: lighter;
+	font-size: 30pt;
+}
+
+.cardpre-title{
+	font-weight: lighter;
+	font-size: 12pt; 
+}
+
+.cardpre-mini{
+	font-weight: lighter;
+	font-size: 12pt;
+}
+
+.cardpre-percent{
+	font-weight: lighter;
+	font-size: 30pt;
+}
+
+.cardpre-text{
+	font-weight: lighter;
+	font-size: 12pt;
+}
+
+.card-bottomlinered{
+	border-bottom: 2px solid #F37053;
+}
+
+.card-bottomlinegreen{
+	border-bottom: 2px solid #41D6C3;
+}
+
+.card-linegrey{
+	border-bottom: 1px solid #959595;
+}
+
+#greyline{
+	color: #959595;
+	background-color: #959595;
+	margin: 0 !important;
+	height: 1px;
+}
+
+.arrow-up{
+	background: url('../images/icons/GreenUp.png') 50% 50% / 100% 100% no-repeat;
+}
+
+.arrow-down{
+	background: url('../images/icons/red_down.png') 50% 50% / 100% 100% no-repeat;
+}
+
+#arrow-location{
+	width:10px;
+}
+
+#tablecard {
+	width: 100%;
+	align: center;
+	margin-top: 20px;
+}
+
+#tablecard th td {
+	width: 47%;
+	align: center;
+}
+
+#divider {
+	width: 6%;
+}
+#performarrow {
+	width: 10px;
+	height: 10px;
+	margin-bottom: 15px;
+	margin-right: 10px; 
+}
+
+#compressline {
+	line-height: 0.9;
+}
+
+.cardSourceTitle{
+	margin-top:20px;
+	cursor: pointer;
+	align: left;
+	text-decoration: none;
+	color: black;
+	
+}
+
+.card-subtitle {
+	height: auto !important;
+	min-height: 12px; /* this is for empty titles, matching the font size */
+	font-size: 12px;
+	color: #888888;
+}

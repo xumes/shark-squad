@@ -1,0 +1,16 @@
+.hpd-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: #333333;
+    height: 40px;
+}
+
+.ibm-logo {
+    line-height: 40px;
+	font-size: 1.4em;
+    color: #b0b0b0;
+    background: url('../images/ibm-loader.gif') no-repeat 3px 3px;
+    padding-left: 93px;
+}

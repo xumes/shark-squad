@@ -1,0 +1,44 @@
+.attachment-upload{
+
+}
+.attachment-upload input {
+
+}
+.attachment-upload textarea:hover,
+.attachment-upload input:hover,
+.attachment-upload textarea:active,
+.attachment-upload input:active,
+.attachment-upload textarea:focus,
+.attachment-upload input:focus
+{
+    outline:0 !important;
+    -webkit-appearance:none !important;
+}
+
+.attachment-upload .panel {
+    border-radius: 0;
+    /*6D7777*/
+}
+.attachment-upload .panel.panel-default.expanded {
+    border-color: #6D7777;
+}
+
+.attachment-upload .panel.panel-default > .panel-heading {
+    border: 0;
+    border-radius: 0;
+    background-image: none;
+    background-color: #F0F1F3;
+}
+
+.attachment-upload .panel.panel-default.expanded > .panel-heading {
+    background-color: #6D7777;
+}
+
+.attachment-upload .panel .panel-heading .panel-title{
+    color: #6D7777;
+    font-weight: normal;
+}
+.attachment-upload .panel.expanded .panel-heading .panel-title{
+    color: #ffffff;
+}
+

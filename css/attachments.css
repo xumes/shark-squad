@@ -1,0 +1,176 @@
+
+.attach-view-switch {
+	display: flex;
+	align-items: center;
+}
+
+.attach-view-switch a, .attach-view-switch div {
+	padding: 0 10px;
+}
+
+.attach-view-switch .ibm-glyphicon {
+	top: 0;
+}
+
+.attach-details-link {
+	margin-top: -10px;
+	text-align: center;
+}
+
+.attach-details-link a:hover, .bookmark-url-link a:hover {
+	text-decoration: none;
+}
+
+
+
+/** Attachments tile view */
+
+.attach-tile {
+	padding: 20px;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+}
+
+/* overflow doesn't follow padding; hide overflow text with border instead */
+.attach-tile:after {
+	content: "";
+    display: block;
+    border-bottom: solid 25px #FFF;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+/* weirdest thing. not sure why upload tile has to be smaller width; 
+   otherwise it doesn't fit at the end */
+ul.hpd-tile-grid li.upload-tile { width: 276px; }
+
+.upload-tile-box {
+	border: 1px dashed #D1D1D1;
+	color: #777677;
+	background: white;
+}
+
+span.attach-remove {
+	x-font-size: 30px;
+    position: absolute;
+    x-top: 8px;
+    right: 10px;
+    color: #888;
+    cursor: pointer;
+
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    height: 20px;
+}
+
+.attach-view .ibm-glyphicon,
+.tile-icon .ibm-glyphicon {
+	top: 0px;
+}
+
+.tile-icon .ibm-glyphicon {
+	font-size: 120px;
+	margin: -5px 0;
+	color: #4178BE;
+}
+.tile-icon .ibm-glyphicon.ibm-add-link { color: #D1D1D1; }
+
+.attach-tile .hpd-tile-holder {
+    height: 20px;
+    margin-bottom: 15px;
+}
+
+.attach-tile .hpd-tile-title {
+    line-height: 20px;
+}
+
+/* .attach-name {
+	font-weight: bold;
+} */
+
+.attach-author,
+.attach-date,
+.attach-role,
+.attach-size {
+	margin-top:  7.5px;
+	margin-bottom: 7.5px;
+	font-size: 0.9375em;
+	color: #6D7777;
+}
+
+.attach-desc {
+	padding-top: 5px;
+	text-align: left;
+	max-height: 120px;
+}
+
+.attach-tile-row{
+	padding-top: 0px;
+	margin: 0;
+}
+
+.attach-tile-row > div:nth-child(1) {
+	padding: 0;
+	width: 217px;
+	height: 224px;
+	margin-right: 20px;
+	x-border: 1px solid red;
+}
+
+.attach-tile-row > div:nth-child(2) {
+    padding: 0;
+    width: 173px;
+    height: 224px;
+    x-border: 1px solid darkseagreen;
+}
+
+.attach-tile-row .tile-info {
+    text-align: left;
+    margin: 10px 0;
+    margin-top: -10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.attach-tile-row .tile-icon {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.attach-tile-row .tile-icon .tile-icon-thumbnail{
+    max-width: 173px;
+    max-height: 220px;
+    border: 1px solid #c8d2d2;
+    text-align:center;
+    overflow:hidden;
+}
+
+.attach-tile-row .tile-icon .tile-icon-thumbnail img{
+    width: 173px;
+}
+
+/** Attachments table view */
+
+.attachment-grid .attach-icon {
+	margin: -5px 0;
+}
+
+/* Upload file link in table view */
+
+.attachment-grid .ui-grid-footer,
+.attachment-grid .ui-grid-footer .ibm-glyphicon {
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.attachment-grid .ui-grid-footer .ibm-glyphicon {
+	font-size: 1.3em; 
+	padding: 0 2px;
+}

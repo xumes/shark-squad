@@ -1,0 +1,28 @@
+.newcheckbox input[type=checkbox] {
+	visibility: hidden;
+	margin-right: 7px;
+	cursor: pointer;
+}
+
+.newcheckbox input[type=checkbox] + span:before {
+	content: "";
+	display: block;
+	border: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-top: -20px;
+	width: 20px;
+	height: 20px;
+	visibility: visible;
+ 	border: 1px solid black;
+	font-size: 13px;
+	text-align: center;
+	font-weight: normal;
+}
+.newcheckbox input[type=checkbox]:checked + span:before {
+	content: "✓";
+	background: black;
+	color: white;
+	border: 1px solid black;
+}

@@ -1,0 +1,123 @@
+
+table.scorecard {
+	width: 100%;
+    border-collapse: collapse;
+}
+
+table.scorecard thead tr{
+    height: 40px;
+}
+
+table.scorecard thead tr.header{
+    height: 50px;
+}
+
+table.scorecard thead tr.header th{
+    background-color: #313B3B;
+}
+
+table.scorecard thead tr.sub-header-1{
+
+}
+
+table.scorecard thead tr.sub-header-1 {
+
+}
+
+table.scorecard thead tr.sub-header-1 th{
+    background-color: #F0F1F3;
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+table.scorecard thead tr.sub-header-2 {
+    height: 25px;
+}
+
+table.scorecard thead tr.sub-header-2 th{
+    background-color: #F0F1F3;
+    color: #000000;
+    font-size: smaller;
+    font-style: italic;
+    font-weight: normal;
+    padding: 0 0.2rem 0 0.2rem;
+}
+table.scorecard .circle {
+    display: inline-block;
+    height:20px;
+    width:20px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius: 10px;
+}
+
+table.scorecard .circle.bg.white {
+    box-shadow: 0 0 0 1px #959F9F;
+}
+table.scorecard .circle.bg.red28 {
+    box-shadow: 0 0 0 1px #E71D32;
+}
+table.scorecard .circle.bg.green28 {
+    box-shadow: 0 0 0 1px #5AA700;
+}
+table.scorecard .circle.bg.yellow28 {
+    box-shadow: 0 0 0 1px #EFC100;
+}
+
+table.scorecard .na:before {
+    content: "N/A";
+}
+table.scorecard thead{
+    color: #fff;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+table.scorecard thead tr.sub-head {
+    border-bottom: 2px solid #0D1111;
+    height: 50px;
+}
+
+table.scorecard thead tr.sub-head th
+{
+    background-color: #F0F1F3;
+    color: #0D1111;
+}
+
+table.scorecard thead th{
+    text-align: center;
+    vertical-align: middle;
+}
+table.scorecard tbody tr td{
+    height: 40px;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+table.scorecard tbody tr.odd td{
+    background-color: #F0F1F3;
+}
+
+table.scorecard .circle.red {
+    background-color: red;
+}
+
+table.scorecard tbody tr td{
+    border: 1px solid #fff;
+}
+
+table.scorecard tbody tr td:last-child {
+    border-right: 0;
+}
+table.scorecard tbody tr.rowspan td:first-child {
+    border-left: 0;
+}
+table.scorecard tbody tr:not(.rowspan) td:nth-child(n+2) {
+    text-align: center;
+}
+table.scorecard tbody tr.rowspan  td:nth-child(n+3) {
+    text-align: center;
+}

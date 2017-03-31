@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" fill-rule="nonzero">
+            <path d="M12,0 C5.373,0 0,5.373 0,12 C0,18.627 5.373,24 12,24 C18.627,24 24,18.627 24,12 C24,5.373 18.627,0 12,0 Z M12,17 C9.238,17 7,14.762 7,12 C7,9.238 9.238,7 12,7 C14.762,7 17,9.238 17,12 C17,14.762 14.762,17 12,17 Z" id="Shape" fill="#4479BC"></path>
+            <path d="M12,10 C10.894,10 10,10.896 10,12 C10,10.896 10.895,10 12,10 Z" id="Shape" fill="#000000"></path>
+            <path d="M10,12 C10,13.104 10.894,14 12,14 C10.895,14 10,13.104 10,12 Z" id="Shape" fill="#000000"></path>
+            <path d="M12,10 C13.104,10 14,10.896 14,12 C14,10.896 13.105,10 12,10 Z" id="Shape" fill="#000000"></path>
+            <path d="M12,14 C13.105,14 14,13.104 14,12 C14,13.104 13.104,14 12,14 Z" id="Shape" fill="#000000"></path>
+            <path d="M12,8 C9.791,8 8,9.79 8,12 C8,14.21 9.791,16 12,16 C14.209,16 16,14.21 16,12 C16,9.79 14.209,8 12,8 Z M12,14 C10.894,14 10,13.104 10,12 C10,10.896 10.894,10 12,10 C13.105,10 14,10.896 14,12 C14,13.104 13.105,14 12,14 Z" id="Shape" fill="#477ABA"></path>
+        </g>
+    </g>
+</svg>

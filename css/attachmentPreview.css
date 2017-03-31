@@ -1,0 +1,142 @@
+.preview-container {
+	display: flex;
+	flex-flow: row;
+    /* height: 90vh; */
+    border: gray solid 1px;
+    overflow: hidden;
+    /* margin-bottom: 5px; */
+    background-color: #dddbdf;
+}
+/* 
+@media screen and (min-height: 768px) {
+	.preview-container {
+	    height: 65vh;
+	}
+}
+ 
+@media screen and (min-height: 1024px) {
+	.preview-container {
+	    height: 73vh;
+	}
+}
+ */
+.pdf-preview-header-top {
+	margin-top: -8px;
+}
+
+.pdf-preview-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 8px;
+}
+
+.pdf-preview-header a {
+	color: black !important;
+}
+
+.pdf-preview-item {
+	text-align: center;
+	padding-right: 1em;
+	text-decoration: none;
+}
+
+.pdf-preview-item span.ibm-glyphicon {
+	font-size: 2.3em;
+}
+
+.pdf-preview-fullview {
+	align-self: flex-end;
+	text-decoration: none;
+}
+
+.pdf-preview-fullview a:hover {
+	text-decoration: none;
+}
+
+
+.pdf-preview-page-go {
+	position: relative;
+	top: 8px;
+	font-size: 1.2em;
+}
+
+.pdf-preview-page-go input {
+	width: 3em;
+	text-align: center;
+}
+
+.pdf-preview-magstick {
+	position: relative;
+	left: -8px;
+	top: 10px;
+	font-weight: bold;
+	-ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+
+.pdf-preview-magstick:after {
+	content: "-";
+}
+
+.pdf-preview-item a:hover {
+	text-decoration: none;
+}
+
+.pdf-preview-item-disabled a {
+	color: gray;
+	cursor: not-allowed;
+}
+
+.pdf-preview-item-enabled a {
+	color: #337ab7;
+	cursor: pointer;
+}
+
+.preview-prev {
+	width: 50px;
+	text-align: center;
+}
+
+.preview-next {
+	width: 50px;
+	text-align: center;
+}
+
+.preview-content {
+	width: 100%;
+	overflow: scroll;
+	text-align: center;
+	-webkit-overflow-scrolling: touch;
+}
+
+.preview-zoom {
+	margin-right: 2rem;
+}
+
+.preview-zoom:hover, .attach-info:hover, .switch-label:hover, .preview-arrow:hover, .attach-details:hover {
+	cursor: pointer;
+}
+
+.attach-details {
+	display: inline-flex;
+	margin-top: 10px
+}
+
+/* attachment detail modal styles */
+.attdet-container {
+	padding: 20px;
+}
+
+.attdet-title {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-bottom: 2rem;
+	margin-right: 1rem;
+	display: inline-block;	
+}
+
+.attdet-container span.ibm-glyphicon:hover {
+	cursor: pointer;
+}

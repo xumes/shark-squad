@@ -1,0 +1,153 @@
+/** Common page grid layout used in attachment table view and bookmarks */
+
+.table-view { padding: 40px 4% 50px 4%; }
+.table-view .hpd-tile {
+	width: 100%;
+	padding: 10px;
+	height: 65vh;
+	margin: 0;
+}
+
+.table-add-attach{
+	padding: 40px 4% 5px 4%;
+}
+.table-add-attach .hpd-tile {
+	width: 100%;
+	padding: 10px;
+	height: 65vh;
+	margin: 0;
+}
+
+.table-view .ibm-glyphicon { color: #4178BE; }
+
+
+/* ui-grid table stylings */
+
+.page-grid {
+	height: 60vh;
+}
+
+.page-grid .ui-grid-canvas {
+  height: 100% !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+.page-grid .watermark {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: #D1D1D1;
+}
+
+.page-grid, .page-grid .ui-grid-header {
+	border: 0;
+}
+
+/** Row */
+
+/* transition effects */
+.page-grid .ui-grid-row.ng-enter { transition: 0.5s ease-in all; }
+.page-grid .ui-grid-row.ng-enter { opacity: 0; }
+.page-grid .ui-grid-row.ng-enter-active { opacity: 1; }
+
+.page-grid .ui-grid-row {
+	background-color: #FFF;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom: 0px solid #D1D1D1;
+}
+
+.page-grid .ui-grid-row:nth-child(even) .ui-grid-cell {
+	background-color: #fbfcfc !important; /* Cool White 10 */
+	padding: 15px 5px;
+}
+
+.page-grid .ui-grid-row:nth-child(odd) .ui-grid-cell {
+	background-color: #f0f2f3 !important; /* Cool White 30 */
+	padding: 15px 5px;
+}
+
+
+/** Header */
+
+.page-grid .ui-grid-header-cell {
+	color: black;
+	background-color: #ffffff;
+	border: 0;
+	border-bottom: 0px solid black;
+	padding-right: 5px;
+	vertical-align: bottom;
+	padding-inline-start: 12px;
+}
+
+
+/** Cell */
+
+.page-grid .ui-grid-cell {
+	border: 0;
+	background-color: inherit !important;
+}
+
+
+/** Others */
+
+.page-grid .ui-grid-cell-contents, 
+.page-grid .ui-grid-header-cell  {
+	text-align: left;
+}
+
+.page-grid .ibm-glyphicon { top: .2em; }
+
+/* following css for wrapping long file names in the cell */
+
+.page-grid .ui-grid-viewport .ui-grid-cell-contents {
+	word-wrap: break-word;
+	white-space: normal !important;
+}
+
+.page-grid .ui-grid-row, .table-view .ui-grid-cell {
+	height: auto !important;
+}
+
+.page-grid .ui-grid-row div[role=row] {
+  display: flex ;
+  align-content: stretch;
+}
+
+
+
+.ui-grid-sort-priority-number{
+	font-size: 0 !important;
+}
+.ui-grid-column-menu-button {
+  position: absolute;
+  top: 0;
+}
+.ui-grid-column-menu-button .ui-grid-icon-angle-down {
+  vertical-align: sub;
+}
+
+
+.wrench-grid-main .ui-grid-icon-menu:before, .hpd-grid .ui-grid-icon-menu:before {
+	
+    font-size: 30px;
+    content: "\f182";
+    font-family: "icons-ibm-v3";
+    top: -9px !important;
+    
+}
+
+.ui-grid-menu-button {
+	background: #ffffff;
+    border: 0;
+    top: -1px;
+}
+
+
+#attach-grid .page-grid .ui-grid-row {
+	padding: 8px 5px;
+}

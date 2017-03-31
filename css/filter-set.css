@@ -1,0 +1,187 @@
+  .hpd-filter-set {
+      display: flex;
+      margin-top: 20px;
+  }
+
+  .hpd-filter-set >  div {
+      x-float: left;
+      /* margin-top: 10px; */
+  }
+
+  .hpd-filter-set span.hpd-label {
+      font-size: 1.2rem;
+      white-space: nowrap;
+  }
+
+
+  .hpd-filter-set > div:not(:first-child), .hpd-filter-set-left-margin {
+      margin-left: 1rem;
+  }
+
+  .hpd-dropdown-group {
+
+  }
+
+  .hpd-dropdown-group .hpd-dropdown-group-menuitem {
+  	height: 40px;
+  	line-height: 2.4;
+  }
+
+ .hpd-dropdown-group .hpd-dropdown-group-menu {
+	max-height: 200px;
+	/*overflow-y: scroll;*/
+	overflow-y: auto;
+	overflow-x: hidden;
+	
+}
+
+.hpd-dropdown-btn {
+	min-width: 100px;
+}
+
+.hpd-dropdown-group button, 
+.hpd-dropdown-group .hpd-dropdown-group-menu,
+.hpd-filter-set .hpd-dropdown-group div.multiselect-parent ul.dropdown-menu {
+	border-radius: 0px;
+	border: 0;
+	background-color: #F9F9FB;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	overflow: auto !important;
+}
+
+.hpd-dropdown-group .hpd-dropdown-group-menu li a.hpd-dropdown-group-menuitem:hover,
+.hpd-dropdown-group .hpd-dropdown-group-menu li a.hpd-dropdown-group-menuitem li a:focus,
+.hpd-filter-set .hpd-dropdown-group div.multiselect-parent ul.dropdown-menu li a:hover {
+	background: #5596E6;
+	color: white;
+}
+
+
+  .hpd-qtd-period .hpd-dropdown-group button {
+  	background-color: #ffffff;
+  	color: #734098 !important;
+  	border-color: #734098;
+  }
+
+  .hpd-qtd-period .hpd-label {	
+  	color: #734098 !important;
+  }
+
+  .hpd-qtr-period .hpd-dropdown-group button {
+  	background-color: #ffffff;
+  	color: #548dfe !important;
+  	border-color: #548dfe;
+  }
+
+  .hpd-qtr-period .hpd-label {	
+  	color: #548dfe !important;
+  }
+
+
+.hpd-filter-set div.btn-group.hpd-dropdown-group.dropdown.open button,
+.filter-option div.hpd-dropdown-group.open button {
+	background-color: #ECF0F2 !important;
+}
+
+/* multiselect filters do not add a class called open to the parent div
+   so if highlighting based on focus/selection is important, we can use the style below
+   on the above rule, but it means the user has to click outside to lose focus on the drop down button
+   to get rid of the darker selection button
+   
+   .hpd-filter-set div.btn-group.hpd-dropdown-group.dropdown button:focus
+*/
+
+.hpd-filter-set div.btn-group.hpd-dropdown-group.dropdown button,
+.filter-option div.hpd-dropdown-group button {
+	background-color: #F0F2F3 !important; /* Previous Color: #F9F9FB */
+}
+
+.hpd-filter-set div.btn-group.hpd-dropdown-group.dropdown button,
+.filter-option div.hpd-dropdown-group button {
+	border: 0;
+	box-shadow: none;
+	text-align: left;
+	padding: 6px;
+	padding-right: 25px;
+}
+
+.hpd-filter-set div.btn-group.hpd-dropdown-group.dropdown button span,
+.filter-option div.hpd-dropdown-group button span {
+	position: absolute;
+	right: 5px;
+	top: 50%;
+}
+
+.hpd-dropdown-group span.caret {
+	margin-left: 5px;
+}
+
+  .hpd-dropdown-group button.btn-primary {
+  	border-radius: 0px;
+  }
+
+  /* Putting the media rules for this class (hpd-filter-set-flow) in the tiles.css file does currently work
+  	so the rules are copied over and need to be kept in sycn. There is something probably related to the order
+  	in which things are loaded.
+
+  	Start - rules comment
+  */
+  .hpd-filter-set-flow {
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: flex-start;
+  }
+
+  @media screen and (min-width:1280px) {
+  	.hpd-filter-set-flow { flex-direction: row; }
+  }
+
+  @media screen and (min-width:980px) and (max-width:1279px)  {
+  	.hpd-filter-set-flow { flex-direction: row; }
+  }
+
+  @media screen and (min-width:680px) and (max-width:979px) {
+  	.hpd-filter-set-flow { flex-direction: column; }
+  }
+
+  @media screen and (max-width:679px) {
+  	.hpd-filter-set-flow { flex-direction: column; }
+  }
+  /*
+  	End - rules comment
+  */
+
+
+
+.si-filter-set-flow {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+
+
+.fin-filter-right-gap {
+	padding-right: 25px;
+}
+
+.si-filter-left-gap {
+	padding-left: 10px;
+	margin-top: 0;
+}
+
+.hpd-dropdown .hpd-dropdown-group button {
+	background-color: #ffffff;
+}
+
+.hpd-cardsource-info{
+	display: inline-block;
+}
+
+.hpd-cardsource-info.bold{
+	display: inline-block;
+	font-weight: bold;
+}

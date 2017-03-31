@@ -1,0 +1,26 @@
+.bookmark-url-link {
+	margin-top: -10px;
+	text-align: left;
+}
+
+.bookmkark-list-urlbk {
+	position: relative;
+	display: inline-block;
+	top: -20px;
+	color: #3E76C0;
+}
+
+/* Bookmarks ui-grid */
+
+.bookmark-grid .ui-grid-cell-contents .nowrap {
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.bookmark-grid .ui-grid-cell-contents.bookmark-icon > span {
+    margin-top: -0.4em;
+}
+
+.bookmark-grid .edit { padding-bottom: 20px; }
+.bookmark-grid .delete { padding-bottom: 10px; }

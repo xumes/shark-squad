@@ -1,0 +1,362 @@
+
+.hpd-tile-grid-container {
+	margin: 0 auto;
+	position: relative;
+	/* min-height: 90vh; */ /** spinner space */
+}
+
+/** 
+ * 4 configured widths that scale to 1-tile, 2-tile, 3-tile, 4-tile width
+ * each tile has a 470px width (450px for actual tile + 20px left/right tile margins)
+ * screen min-width accounts for (num-tiles * 470px) + 80px left/right grid margins
+ * hpd-tile-grid-container = num-tiles * 470px
+ * exp-pane-container = (num-tiles * 450px) - 20px (to account for leftmost/rightmost margins)
+ */
+
+/* 4-tile width */
+@media screen and (min-width:1960px) {
+	.hpd-tile-grid-container { max-width: 1880px; }
+	.exp-pane-container { width: 1860px; }
+}
+
+/* 3-tile width */
+@media screen and (min-width:1490px) and (max-width:1959px)  {
+	.hpd-tile-grid-container { max-width: 1410px; }
+	.exp-pane-container { width: 1390px; }
+}
+
+/* 2-tile width */
+@media screen and (min-width:1020px) and (max-width:1489px) {
+	.hpd-tile-grid-container { max-width: 940px; }
+	.exp-pane-container { width: 920px; }
+}
+
+/* 1-tile width */
+@media screen and (max-width:1019px) {
+	.hpd-tile-grid-container { max-width: 470px; }
+	.exp-pane-container { width: 668px; }
+}
+
+.hpd-tile-grid-container > .message {
+	height: 40px;
+	padding: 20px 10px;
+	color: #00A89C;
+}
+
+.hpd-tile-grid-container > .message > .message-buttons {
+	display: inline-block;
+	margin-top: -10px;
+}
+.hpd-tile-grid-container > .message > .message-buttons button {
+	margin-left: 10px;
+}
+
+ul.hpd-tile-grid {
+	list-style: none;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+.hpd-tile-box {
+/*	border: 1px solid #C7C7C7; */ 
+	background-color: white;
+}
+
+li.ui-sortable-selected > .hpd-tile-box,
+.hpd-tile-box.selected {
+	border: 2px solid #00A89C;
+}
+
+ul.hpd-tile-grid > li {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px 20px 10px;
+	width: 450px;
+}
+
+li.hpd-tile-grid  {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px 20px 10px;
+	width: 450px;
+}
+
+ul.hpd-tile-attachment-grid > li {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px 20px 10px;
+	width: 450px;
+}
+
+li.hpd-tile-attachment-grid {
+	display: block !important;
+	vertical-align: top;
+	margin: 0 10px 20px 10px;
+	width: 100%;
+}
+
+ul.hpd-tile-grid > li.ng-enter, 
+ul.hpd-tile-grid.highlight > li.ng-leave {
+	transition: 0.5s ease-in all;
+}
+
+ul.hpd-tile-grid > li.ng-enter, 
+ul.hpd-tile-grid.highlight > li.ng-leave-active {
+	opacity: 0;
+}
+
+ul.hpd-tile-grid > li.ng-enter-active, 
+ul.hpd-tile-grid.highlight > li.ng-leave {
+	opacity: 1;
+}
+
+ul.hpd-tile-grid > li, .hpd-tile {
+	height: 304px;
+	width: 450px;
+}
+
+/* card management */
+
+ul.hpd-tile-grid.moveable .hpd-tile-box { cursor: move; }
+ul.hpd-tile-grid.selectable .hpd-tile-box { cursor: pointer; }
+ul.hpd-tile-grid.highlight .hpd-tile-box:hover { border-color: #00A89C; }
+
+
+.hpd-tile { position: relative; } /* for positioning view control */
+
+.exp-pane-container {
+	margin: 0 auto;
+	background: #FFF;
+	position: relative;
+}
+
+.exp-pane-animate {
+	transition: all linear 3s;
+	background-color: olive; 
+}
+
+.exp-pane-animate.ng-hide {
+	opacity: 0;
+	background-color: aqua; 
+}
+
+.exp-pane-container span.close-icon {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    cursor: pointer;
+    z-index: 1;
+	color: #333;
+}
+
+.exp-pane-container .close-icon > .ibm-glyphicon {
+	font-size: 2.2em;
+}
+
+.exp-pane {
+	z-index: 10;
+	position: relative;
+	margin-top: 20px;
+}
+
+.previous {
+	left: 0;
+}
+
+.next {
+	right: 0;
+}
+
+.previous, .next {
+	position: relative;
+    top: 0;
+    /* height: 100vh; */
+    width: 60px;
+}
+
+/* .previous span, .next span { top: 45%; } */
+
+.preview-arrow {
+	position: fixed;
+	top: 40vh;
+    font-size: 3vh;
+	color: #6DACA0;
+    /* background:#E9E9E9; */
+	text-align: center;
+	height: 40px;
+    line-height: 40px;
+    width:40px;
+}
+
+.preview-arrow:hover {
+	background: #DFE9E9;	
+}
+
+.preview-arrow-left {
+	left: 0;
+   -moz-border-radius: 0 40px 40px 0;
+    -webkit-border-radius: 0 40px 40px 0;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.preview-arrow-right {
+	right: 0;
+    -moz-border-radius: 0 40px 40px 0;
+    -webkit-border-radius: 0 40px 40px 0;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.exp-pane-header.bookmark { padding-right: 50px; } /* hack to align header closer to close button */
+.exp-pane-header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 40px;
+	padding-right: 130px; /* padding for close button on the right */
+	white-space: nowrap;
+}
+
+.exp-pane-header .title {
+	font-size: 30px;
+	font-weight: bold;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 82%;
+}
+
+
+/** Tile */
+
+.hpd-tile-display {
+	height: 304px;
+	padding: 20px;
+}
+
+.hpd-tile-subtitle {
+	text-align: left;
+	padding-bottom: 8px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.hpd-tile-title {
+	text-align: left;
+	color: black;
+	font-weight: bold;
+	font-size: 1.1em;
+	width: 92%;
+	overflow: inherit;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.hpd-tile-title div {
+    font-size: 12px;
+    font-weight: 100;
+    color: #777677;
+}
+
+.hpd-tile-title span {
+    font-size: 12px;
+    text-align: left;
+	color: #5596E6;
+	font-weight: bold;
+	font-size: 1.1em;
+	margin-right: 7px;
+} 
+
+.hpd-tile-holder {
+    width: 100%;
+    min-height: 22px;
+    max-height: 44px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.hpd-tile-number {
+	text-align: left;
+	color: #5AAAFA;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.hpd-tile-content {
+	height: calc(100% - 30px);  /* space for title */
+	
+}
+
+/* 
+ * next 2 divs of hpd-tile-content needs to be set to 100%
+ * directives need to have 'replace: true' in order to inherit container heights
+ */
+.hpd-tile-content > div,  /* if-clause */
+.hpd-tile-content > div > div,  /* loading tile */
+.hpd-tile-content > div > div > div { /* tile-directive */
+	height: 100%;
+}
+
+
+/* preview cards */
+
+#pipeline-chart-preview {
+	max-height: 100% !important;
+	width: 90%;
+	float: left;
+	margin-left: -14px;
+}
+
+.pipeline-table-preview {
+	width: 15%;
+	height: 100%;
+	float: left;
+}
+
+.hpd-tile-buttons {
+	z-index: 100;
+	position: absolute;
+	right: 0;
+}
+
+.hpd-tile-buttons-attch-adjustment {
+	margin-top: 20px;	
+}
+
+.hpd-tile-buttons > div {
+	float: right;
+	margin-left: 20px;
+}
+
+.hpd-tile-header-button {
+	text-align: center;
+}
+
+.hpd-tile-header-button a {
+	color: #000;
+}
+
+.hpd-tile-header-button a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.hpd-tile-after-menu-button {
+	padding-left: 30px;
+}
+
+.hpd-tile-after-table-button {
+	padding-left: 5px;
+}
+
+.hpd-expcard-wrapper {
+	display: flex;
+	flex-direction: row;
+	background-color: #FFF;
+	min-height: calc(100vh - 140px);
+}
+
+.hpd-expcard-bg {
+	background-color: #F1F2F2;
+	min-height: calc(100vh - 140px);
+}

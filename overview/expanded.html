@@ -1,0 +1,161 @@
+<div class="hpd-expcard-wrapper animated hpd-animated hpdSlideInLeft" data-ng-class="animateOpenClose">
+  <div class="previous" data-ng-swipe-left="go(selected.tile.previous, 'previous')" data-ng-swipe-right="go(selected.tile.next, 'next')">
+    <span class="preview-arrow preview-arrow-left ibm-glyphicon ibm-chevron-left-bold-link" data-ng-show="selected.tile &amp;&amp; selected.tile.previous" data-ng-click="go(selected.tile.previous, 'previous')"></span>
+  </div>
+  <div class="exp-pane-container">
+    <div>
+      <div class="hpd-tile-buttons">
+
+        <div class="ng-scope" >
+          <div class="hpd-tile-header-button ng-isolate-scope" data-ng-click="close()">
+            <a><span class="ibm-glyphicon ibm-close-link"></span><br>Close</a>
+          </div>
+        </div>
+        <div class="ng-scope">
+          <div ng-click="bookmark()" class="hpd-tile-header-button ng-isolate-scope">
+            <a><span class="ibm-glyphicon ibm-bookmark-link" aria-hidden="true"></span><br>Bookmark</a>
+          </div>
+        </div>
+        <div class="ng-scope" >
+          <div ng-click="addToCards()" class="hpd-tile-header-button ng-isolate-scope">
+            <a><span class="ibm-glyphicon ibm-maximize-link" aria-hidden="true"></span><br>Add to Cards</a>
+            <!--     <a>&nbsp;</a> -->
+          </div>
+        </div><div class="ng-scope" >
+          <div class="hpd-tile-header-button" data-ng-click="setPresentationViewStatus(true)">
+            <a><img class="hpd-title-header-button-img" src="images/icons/icon-presentation.svg">Presentation</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-pane ng-scope" data-ui-view=""><div class="ng-scope" dw-loading="loading-key-deals">
+        <section class="fin-grid-container">
+          <header class="ov-card-title" data-ng-class="{&quot;pres-on-ov-card-title&quot;: pres}">
+            <div class="ng-binding pres-off-card-title" data-ng-class="{&quot;pres-on-card-title&quot;: pres, &quot;pres-off-card-title&quot;: !pres}">{{nome}}</div>
+            <!-- ngIf: pres -->
+          </header>
+          <header class="grid-filter-header">
+            <section style="" class="ng-pristine ng-untouched ng-valid ng-scope ng-isolate-scope ng-empty" name="crachti">
+              <div class="hpd-filter-set" style="" dw-loading="loading-key-deals-filter">
+                <div><span class="hpd-label">Geography </span><div style="" class="ng-pristine ng-untouched ng-valid ng-isolate-scope ng-empty" data-options="vm.iotDropDown" data-option="vm.iotOption" ng-model="vm.x" ng-change="vm.iotSelect">
+                  <div class="btn-group hpd-dropdown-group dropdown" uib-dropdown="" is-open="vm.isopen">
+                    <div class="ng-isolate-scope" ng-dropdown-multiselect="" options="vm.options" selected-model="vm.selectedOption" extra-settings="vm.settings" events="vm.events" translation-texts="vm.texts"><div class="multiselect-parent btn-group dropdown-multiselect"><button style="" type="button" class="dropdown-toggle ng-binding btn btn-default" ng-class="settings.buttonClasses" ng-click="toggleDropdown()">LA&nbsp;<span class="caret"></span></button><ul class="dropdown-menu dropdown-menu-form" ng-style="{display: open ? 'block' : 'none', height : settings.scrollable ? settings.scrollableHeight : 'auto' }" style="overflow: scroll; display: none; height: auto;"><li ng-hide="!settings.showCheckAll || settings.selectionLimit > 0"><a class="ng-binding" data-ng-click="selectAll()"><span class="glyphicon glyphicon-ok"></span>  Select All</a></li><li ng-show="settings.showUncheckAll"><a class="ng-binding" data-ng-click="deselectAll();"><span class="glyphicon glyphicon-remove"></span>   Unselect All</a></li><li ng-hide="(!settings.showCheckAll || settings.selectionLimit > 0) &amp;&amp; !settings.showUncheckAll" class="divider"></li><li style="" class="ng-hide" ng-show="settings.enableSearch"><div class="dropdown-header"><input class="form-control ng-pristine ng-untouched ng-valid ng-empty" style="width: 100%;" ng-model="searchFilter" placeholder="Search..." type="text"></div></li><li style="" ng-show="settings.enableSearch" class="divider ng-hide"></li><!-- ngRepeat: option in options | filter: searchFilter --><li style="" class="ng-scope" role="presentation" data-ng-hide="option.hide" ng-repeat="option in options | filter: searchFilter"><a class="ng-binding" role="menuitem" tabindex="-1" ng-click="setSelectedItem(getPropertyForObject(option,settings.idProp))"><span data-ng-class="{'glyphicon glyphicon-ok': isChecked(getPropertyForObject(option,settings.idProp))}"></span> AP</a></li><!-- end ngRepeat: option in options | filter: searchFilter --><li class="ng-scope" role="presentation" data-ng-hide="option.hide" ng-repeat="option in options | filter: searchFilter"><a class="ng-binding" role="menuitem" tabindex="-1" ng-click="setSelectedItem(getPropertyForObject(option,settings.idProp))"><span data-ng-class="{'glyphicon glyphicon-ok': isChecked(getPropertyForObject(option,settings.idProp))}"></span> EP</a></li><!-- end ngRepeat: option in options | filter: searchFilter --><li class="ng-scope" role="presentation" data-ng-hide="option.hide" ng-repeat="option in options | filter: searchFilter"><a class="ng-binding" role="menuitem" tabindex="-1" ng-click="setSelectedItem(getPropertyForObject(option,settings.idProp))"><span data-ng-class="{'glyphicon glyphicon-ok': isChecked(getPropertyForObject(option,settings.idProp))}"></span> JN</a></li><!-- end ngRepeat: option in options | filter: searchFilter --><li class="ng-scope" role="presentation" data-ng-hide="option.hide" ng-repeat="option in options | filter: searchFilter"><a class="ng-binding" role="menuitem" tabindex="-1" ng-click="setSelectedItem(getPropertyForObject(option,settings.idProp))"><span data-ng-class="{'glyphicon glyphicon-ok': isChecked(getPropertyForObject(option,settings.idProp))}"></span> LA</a></li><!-- end ngRepeat: option in options | filter: searchFilter --><li class="ng-scope" role="presentation" data-ng-hide="option.hide" ng-repeat="option in options | filter: searchFilter"><a class="ng-binding" role="menuitem" tabindex="-1" ng-click="setSelectedItem(getPropertyForObject(option,settings.idProp))"><span class="glyphicon glyphicon-ok" data-ng-class="{'glyphicon glyphicon-ok': isChecked(getPropertyForObject(option,settings.idProp))}"></span> NA</a></li><!-- end ngRepeat: option in options | filter: searchFilter --><li class="divider ng-hide" ng-show="settings.selectionLimit > 1"></li><li class="ng-hide" role="presentation" ng-show="settings.selectionLimit > 1"><a class="ng-binding" role="menuitem">1 / 0 selected</a></li></ul></div></div>
+                  </div>
+                </div></div>
+                <div ng-show="vm.show()"><span class="hpd-label ng-binding">Sub-group</span><div style="" class="ng-pristine ng-untouched ng-valid ng-isolate-scope ng-empty" data-options="vm.subgroupDropDown" data-option="vm.subgroupOption" ng-model="vm.x" ng-change="vm.subgroupSelect">
+                  <div class="btn-group hpd-dropdown-group dropdown" uib-dropdown="" is-open="vm.isopen">
+                    <button style="" aria-expanded="false" aria-haspopup="true" id="single-button" type="button" class="btn hpd-dropdown-btn ng-binding dropdown-toggle btn-default" ng-class="[vm.btnStyle]" ng-disabled="vm.disabled" uib-dropdown-toggle="">
+                      All<span class="caret"></span>
+                    </button>
+                    <ul class="hpd-dropdown-group-menu hpd-animated-fast hpdFadeInDown dropdown-menu" uib-dropdown-menu="" role="menu" aria-labelledby="single-button">
+
+                      <!-- ngRepeat: option in vm.options | filter: { hide:'!true' } --><li style="" class="ng-scope" ng-repeat="option in vm.options | filter: { hide:'!true' }">
+                      <a class="hpd-dropdown-group-menuitem ng-binding" ng-click="vm.select(option)">All</a>
+                    </li><!-- end ngRepeat: option in vm.options | filter: { hide:'!true' } --><li class="ng-scope" ng-repeat="option in vm.options | filter: { hide:'!true' }">
+                      <a class="hpd-dropdown-group-menuitem ng-binding" ng-click="vm.select(option)">SVCS</a>
+                    </li><!-- end ngRepeat: option in vm.options | filter: { hide:'!true' } --><li>
+
+                    </li></ul>
+                  </div>
+                </div></div>
+                <div><span class="hpd-label ng-binding">Division</span><div style="" class="ng-pristine ng-untouched ng-valid ng-isolate-scope ng-empty" data-options="vm.divisionDropDown" data-option="vm.divisionOption" ng-model="vm.x" ng-change="vm.divisionSelect">
+                  <div class="btn-group hpd-dropdown-group dropdown" uib-dropdown="" is-open="vm.isopen">
+                    <div class="ng-isolate-scope" ng-dropdown-multiselect="" options="vm.options" selected-model="vm.selectedOption" extra-settings="vm.settings" events="vm.events" translation-texts="vm.texts"><div class="multiselect-parent btn-group dropdown-multiselect"><button style="" type="button" class="dropdown-toggle ng-binding btn btn-default" ng-class="settings.buttonClasses" ng-click="toggleDropdown()">Cognitive@IBM<span class="caret"></span></button><ul class="dropdown-menu dropdown-menu-form" ng-style="{display: open ? 'block' : 'none', height : settings.scrollable ? settings.scrollableHeight : 'auto' }" style="overflow: scroll; display: none; height: auto;"><li ng-hide="!settings.showCheckAll || settings.selectionLimit > 0"><a class="ng-binding" data-ng-click="selectAll()"><span class="glyphicon glyphicon-ok"></span>  Select All</a></li><li ng-show="settings.showUncheckAll"><a class="ng-binding" data-ng-click="deselectAll();"><span class="glyphicon glyphicon-remove"></span>   Unselect All</a></li><li ng-hide="(!settings.showCheckAll || settings.selectionLimit > 0) &amp;&amp; !settings.showUncheckAll" class="divider"></li><li style="" class="ng-hide" ng-show="settings.enableSearch"><div class="dropdown-header"><input class="form-control ng-pristine ng-untouched ng-valid ng-empty" style="width: 100%;" ng-model="searchFilter" placeholder="Search..." type="text"></div></li><li style="" ng-show="settings.enableSearch" class="divider ng-hide"></li><!-- ngRepeat: option in options | filter: searchFilter --><li style="" class="ng-scope" role="presentation" data-ng-hide="option.hide" ng-repeat="option in options | filter: searchFilter"><a class="ng-binding" role="menuitem" tabindex="-1" ng-click="setSelectedItem(getPropertyForObject(option,settings.idProp))"><span data-ng-class="{'glyphicon glyphicon-ok': isChecked(getPropertyForObject(option,settings.idProp))}"></span> AMS Innovation</a></li><!-- end ngRepeat: option in options | filter: searchFilter --><li class="ng-scope" role="presentation" data-ng-hide="option.hide" ng-repeat="option in options | filter: searchFilter"><a class="ng-binding" role="menuitem" tabindex="-1" ng-click="setSelectedItem(getPropertyForObject(option,settings.idProp))"><span data-ng-class="{'glyphicon glyphicon-ok': isChecked(getPropertyForObject(option,settings.idProp))}"></span> Cloud Application Migration Se</a></li><!-- end ngRepeat: option in options | filter: searchFilter --><li class="ng-scope" role="presentation" data-ng-hide="option.hide" ng-repeat="option in options | filter: searchFilter"><a class="ng-binding" role="menuitem" tabindex="-1" ng-click="setSelectedItem(getPropertyForObject(option,settings.idProp))"><span class="glyphicon glyphicon-ok" data-ng-class="{'glyphicon glyphicon-ok': isChecked(getPropertyForObject(option,settings.idProp))}"></span> Cognitive Business Decision Su</a></li><!-- end ngRepeat: option in options | filter: searchFilter --><li class="ng-scope" role="presentation" data-ng-hide="option.hide" ng-repeat="option in options | filter: searchFilter"><a class="ng-binding" role="menuitem" tabindex="-1" ng-click="setSelectedItem(getPropertyForObject(option,settings.idProp))"><span data-ng-class="{'glyphicon glyphicon-ok': isChecked(getPropertyForObject(option,settings.idProp))}"></span> Cognitive Process Services</a></li><!-- end ngRepeat: option in options | filter: searchFilter --><li class="ng-scope" role="presentation" data-ng-hide="option.hide" ng-repeat="option in options | filter: searchFilter"><a class="ng-binding" role="menuitem" tabindex="-1" ng-click="setSelectedItem(getPropertyForObject(option,settings.idProp))"><span data-ng-class="{'glyphicon glyphicon-ok': isChecked(getPropertyForObject(option,settings.idProp))}"></span> GBS Digital Experience</a></li><!-- end ngRepeat: option in options | filter: searchFilter --><li class="ng-scope" role="presentation" data-ng-hide="option.hide" ng-repeat="option in options | filter: searchFilter"><a class="ng-binding" role="menuitem" tabindex="-1" ng-click="setSelectedItem(getPropertyForObject(option,settings.idProp))"><span data-ng-class="{'glyphicon glyphicon-ok': isChecked(getPropertyForObject(option,settings.idProp))}"></span> Next Gen EA &amp; Mobile</a></li><!-- end ngRepeat: option in options | filter: searchFilter --><li class="divider ng-hide" ng-show="settings.selectionLimit > 1"></li><li class="ng-hide" role="presentation" ng-show="settings.selectionLimit > 1"><a class="ng-binding" role="menuitem">1 / 0 selected</a></li></ul></div></div>
+                  </div>
+                </div></div>
+                <div style="" class="ng-hide" ng-hide="vm.show()"><span class="hpd-label ng-binding"></span><div style="" class="ng-pristine ng-untouched ng-valid ng-isolate-scope ng-empty" data-options="vm.segmentDropDown" data-option="vm.segmentOption" ng-model="vm.x" ng-change="vm.segmentSelect">
+
+                </div></div>
+                <div><span class="hpd-label">Squad</span><div style="" class="ng-pristine ng-untouched ng-valid ng-isolate-scope ng-empty" data-options="vm.dealValueDropDown" data-option="vm.dealValueOption" ng-model="vm.x" ng-change="vm.dealValueSelect">
+                  <div class="btn-group hpd-dropdown-group dropdown" uib-dropdown="" is-open="vm.isopen">
+                    <button style="" aria-expanded="false" aria-haspopup="true" id="single-button" type="button" class="btn hpd-dropdown-btn ng-binding dropdown-toggle btn-default" ng-class="[vm.btnStyle]" ng-disabled="vm.disabled" uib-dropdown-toggle="">
+                      Shark<span class="caret"></span>
+                    </button>
+                    <ul class="hpd-dropdown-group-menu hpd-animated-fast hpdFadeInDown dropdown-menu" uib-dropdown-menu="" role="menu" aria-labelledby="single-button">
+
+                      <!-- ngRepeat: option in vm.options | filter: { hide:'!true' } --><li style="" class="ng-scope" ng-repeat="option in vm.options | filter: { hide:'!true' }">
+                      <a class="hpd-dropdown-group-menuitem ng-binding" ng-click="vm.select(option)">All</a>
+                    </li><!-- end ngRepeat: option in vm.options | filter: { hide:'!true' } --><li class="ng-scope" ng-repeat="option in vm.options | filter: { hide:'!true' }">
+                      <a class="hpd-dropdown-group-menuitem ng-binding" ng-click="vm.select(option)">$1M+</a>
+                    </li><!-- end ngRepeat: option in vm.options | filter: { hide:'!true' } --><li class="ng-scope" ng-repeat="option in vm.options | filter: { hide:'!true' }">
+                      <a class="hpd-dropdown-group-menuitem ng-binding" ng-click="vm.select(option)">$5M+</a>
+                    </li><!-- end ngRepeat: option in vm.options | filter: { hide:'!true' } --><li class="ng-scope" ng-repeat="option in vm.options | filter: { hide:'!true' }">
+                      <a class="hpd-dropdown-group-menuitem ng-binding" ng-click="vm.select(option)">$10M+</a>
+                    </li><!-- end ngRepeat: option in vm.options | filter: { hide:'!true' } --><li class="ng-scope" ng-repeat="option in vm.options | filter: { hide:'!true' }">
+                      <a class="hpd-dropdown-group-menuitem ng-binding" ng-click="vm.select(option)">$25M+</a>
+                    </li><!-- end ngRepeat: option in vm.options | filter: { hide:'!true' } --><li class="ng-scope" ng-repeat="option in vm.options | filter: { hide:'!true' }">
+                      <a class="hpd-dropdown-group-menuitem ng-binding" ng-click="vm.select(option)">$40M+</a>
+                    </li><!-- end ngRepeat: option in vm.options | filter: { hide:'!true' } --><li class="ng-scope" ng-repeat="option in vm.options | filter: { hide:'!true' }">
+                      <a class="hpd-dropdown-group-menuitem ng-binding" ng-click="vm.select(option)">$50M+</a>
+                    </li><!-- end ngRepeat: option in vm.options | filter: { hide:'!true' } --><li>
+
+                    </li></ul>
+                  </div>
+                </div></div>
+                <div class="ng-hide" ng-show="vm.show1()"><span class="hpd-label">Revenue Type </span><div style="" class="ng-pristine ng-untouched ng-valid ng-isolate-scope ng-empty" data-options="vm.revenuetypeDropDown" data-option="vm.revenuetypeOption" ng-model="vm.x" ng-change="vm.revenuetypeSelect">
+                  <div class="btn-group hpd-dropdown-group dropdown" uib-dropdown="" is-open="vm.isopen">
+                    <button style="" aria-expanded="false" aria-haspopup="true" id="single-button" type="button" class="btn hpd-dropdown-btn ng-binding dropdown-toggle btn-default" ng-class="[vm.btnStyle]" ng-disabled="vm.disabled" uib-dropdown-toggle="">
+                      All<span class="caret"></span>
+                    </button>
+                    <ul class="hpd-dropdown-group-menu hpd-animated-fast hpdFadeInDown dropdown-menu" uib-dropdown-menu="" role="menu" aria-labelledby="single-button">
+
+                      <!-- ngRepeat: option in vm.options | filter: { hide:'!true' } --><li style="" class="ng-scope" ng-repeat="option in vm.options | filter: { hide:'!true' }">
+                      <a class="hpd-dropdown-group-menuitem ng-binding" ng-click="vm.select(option)">All</a>
+                    </li><!-- end ngRepeat: option in vm.options | filter: { hide:'!true' } --><li class="ng-scope" ng-repeat="option in vm.options | filter: { hide:'!true' }">
+                      <a class="hpd-dropdown-group-menuitem ng-binding" ng-click="vm.select(option)">TCV</a>
+                    </li><!-- end ngRepeat: option in vm.options | filter: { hide:'!true' } --><li>
+
+                    </li></ul>
+                  </div>
+                </div></div>
+                <div><br><button class="btn btn-primary btn-32" ng-click="vm.go()">Apply</button></div>
+                <!-- ngIf: vm.isAdminOrSuper() --><div style="" class="ng-scope" data-ng-if="vm.isAdminOrSuper()"><br><button class="btn btn-primary btn-32" ng-click="vm.save()">Save</button></div><!-- end ngIf: vm.isAdminOrSuper() -->
+                <div><br><button class="btn btn-grey btn-32" ng-click="vm.resetSessionState()">Reset</button></div>
+                <div class="dw-loading dw-loading-overlay"><div class="dw-loading-body"><div class="dw-loading-spinner"></div></div></div></div>
+              </section><!-- end ngIf: !ctrl.isSnD() && !ctrl.isFinance() -->
+              <!-- ngIf: ctrl.isSnD() || ctrl.isFinance() -->
+
+
+              <table>
+                <tbody><tr>
+                  <td>
+                    <div card-source="{{nome}}" tab="overview" class="hpd-tile-after-menu-button cardSourceTitle ng-isolate-scope">
+                      <div class="hpd-tile-header-button" ng-click="viewSourceDetail()" aria-hidden="true" dw-loading="card-source-loading">
+                        <a>
+                          <!-- <span class="glyphicon glyphicon-info-sign"></span>Data Sources -->
+                          <span class="ibm-information-link"></span>
+                          <!-- <span class="blue50">Data Sources</span> -->
+                        </a>
+                        <div class="dw-loading dw-loading-overlay"><div class="dw-loading-body"><div class="dw-loading-spinner"></div></div></div></div>
+                      </div>
+
+
+                    </td>
+                  </tr>
+                </tbody></table>
+              </header>
+
+		<div class="row">
+      <div class="col-md-12">
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Work History</h3>
+          </div>
+          <div class="panel-body">
+            {{historico}}
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Hobby</h3>
+          </div>
+          <div class="panel-body">
+            {{hobby}}
+          </div>
+        </div>
+
+
+      </div>
+    </div>

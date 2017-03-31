@@ -1,15 +1,8 @@
-# Node.js Hello World Sample
+AngularJS Tutorial 1
+====================
 
-This application demonstrates a simple, reusable Node.js web application based on the Express framework.
+author: [Nick Kaye](http://www.nickkaye.com)
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/nodejs-helloworld)
+**NOTE:  We’re referencing all of our vendor dependencies (e.g. Bootstrap, jQuery, Angular) at outside URLs.   Therefore, it is necessary to host our site while we’re working on it.  Be sure we are viewing it in a browser with http:// -- not file://**
 
-## Run the app locally
-
-1. [Install Node.js][]
-+ cd into this project's root directory
-+ Run `npm install` to install the app's dependencies
-+ Run `npm start` to start the app
-+ Access the running app in a browser at <http://localhost:6001>
-
-[Install Node.js]: https://nodejs.org/en/download/
+View the [live demo](http://airpair.github.io/demos/2014/09/T0021-airpair-angularjs-tutorial).

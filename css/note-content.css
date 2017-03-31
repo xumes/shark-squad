@@ -1,0 +1,13 @@
+html {
+
+}
+
+body {
+    font-size: 15px;
+    font-family: Arial;
+    padding: 0px;
+    background-color: #FBFCFC;
+}
+body.body-readonly{
+
+}

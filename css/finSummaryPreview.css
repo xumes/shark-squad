@@ -1,0 +1,50 @@
+.type-label{
+	font-size: 12pt;
+	vertical-align: bottom !important;
+}
+
+.type-subtitle{
+	position: relative;
+	top: -60px;
+	font-size: 12pt;
+	vertical-align: bottom !important;
+}
+
+.type-top-label-nbr{
+	font-size: 25pt;
+	position: relative;
+	top: 12px;
+	vertical-align: baseline !important;
+}
+
+.type-top-label-nbr-key-deals{
+	font-size: 1em;
+	font-weight: bold;
+	position: relative;
+	top: 0px;
+	vertical-align: middle !important;
+}
+
+.type-label-nbr{
+	font-size: 25pt;
+	position: relative;
+	top: 12px;
+	vertical-align: baseline !important;
+}
+.type-label-nbr-key-deals{
+	font-size: 1em;
+	font-weight: bold;
+	position: relative;
+	top: 0px;
+	vertical-align: middle !important;
+}
+
+.red-down{
+	background-image: url(../images/icons/red_down.png); 
+	background-repeat: no-repeat;
+}
+
+.green-up{
+	background-image: url('HPD/common/images/icons/GreenUp.png');
+    background-repeat: no-repeat;
+}
